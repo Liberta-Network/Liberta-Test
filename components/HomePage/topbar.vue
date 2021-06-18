@@ -167,6 +167,7 @@
         <div class="flex">
           <a
             href="#"
+            v-if="!isConnected"
             class="
               block
               text-md
@@ -183,6 +184,7 @@
             "
             >Connect</a
           >
+          <span v-else>{{ walletAddress }}</span>
         </div>
       </div>
     </nav>
@@ -193,7 +195,29 @@ export default {
   data: function () {
     return {
       isHidden: false,
+      isConnected: false,
+      isLoading: false,
+      walletAddress: null,
     };
+  },
+  mounted() {
+    this.$neolineN3.then((neoline) => {
+      let loader = this.$loading.show({
+        container: this.fullPage,
+        canCancel: false,
+      });
+
+      neoline
+        .getAccount()
+        .then((account) => {
+          this.isConnected = true;
+          this.walletAddress = account.address;
+          loader.hide();
+        })
+        .catch(() => {
+          loader.hide();
+        });
+    });
   },
 };
 </script>
