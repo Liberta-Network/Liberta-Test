@@ -25,6 +25,7 @@ export default {
     { src: "~/plugins/neoDapi.client.js" },
     { src: "~/plugins/loading.js" },
     { src: "~/plugins/neocontracts.client.js" },
+    { src: "~/plugins/evaicons.client.js" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

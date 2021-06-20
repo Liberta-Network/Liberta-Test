@@ -4,7 +4,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     borderRadius: {
-      libertiabr: "30px"
+      libertiabr: "30px",
+      libertabr: "7px"
     },
 
     extend: {
@@ -35,7 +36,7 @@ module.exports = {
         blueGray: colors.blueGray,
         libertia: "#388CFC",
         searchbarBG: "#E9F0F4",
-        main: "#f0f9ff"
+        main: "#F9FBFF",
       },
 
       fontSize: {
@@ -51,12 +52,12 @@ module.exports = {
         "5xl": "3rem",
         "6xl": "4rem",
         "7xl": "5rem",
-        tags: "16px"
-      }
-    }
+        tags: "16px",
+      },
+    },
   },
   variants: {
-    extend: {}
+    extend: {},
   },
-  plugins: []
+  plugins: [],
 };
