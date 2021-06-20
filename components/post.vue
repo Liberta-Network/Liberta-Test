@@ -1,7 +1,7 @@
 <template>
   <div class="h-auto flex">
     <!-- Start of component -->
-    <div class="w-340 rounded bg-white border p-6 tracking-wide mt-5 mx-3">
+    <div class="w-full rounded bg-white border p-6 tracking-wide mt-5 mx-3">
       <div id="header" class="flex items-center mb-4">
         <img
           alt="avatar"
@@ -11,17 +11,14 @@
         <div id="header-text" class="leading-5 ml-6 sm">
           <div class="flex justify-between">
             <h4 class="text-lg font-semibold text-gray-900 -mt-1">
-              Brad Adams
+              {{ post.owner }}
             </h4>
             <small class="text-sm text-gray-700 ml-3">22h ago</small>
           </div>
         </div>
       </div>
-      <div class="font-roboto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua.Lorem ipsum dolor
+      <div class="font-roboto w-340">
+        {{ post.content }}
       </div>
       <div class="flex mt-7">
         <div class="flex mr-5 text-gray-700 text-sm">
@@ -62,7 +59,10 @@
     <!-- End of component -->
   </div>
 </template>
+
 <script>
+export default {
+  props: ["post"],
+};
 </script>
-<style>
-</style>
+

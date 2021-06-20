@@ -1,7 +1,9 @@
-/* @hash 4b5585426d73871c6f54748a6a961e9d */
+/* @hash 9ee36e9e3b481334ed1ca23728a72f59 */
 // tslint:disable
 /* eslint-disable */
-let sourceMapsIn = {};
+import { SourceMaps } from '@neo-one/client';
+
+let sourceMapsIn: SourceMaps = {};
 
 if (process.env.NODE_ENV !== 'production' || process.env.NEO_ONE_DEV === 'true') {
   sourceMapsIn = {
@@ -19,7 +21,7 @@ if (process.env.NODE_ENV !== 'production' || process.env.NEO_ONE_DEV === 'true')
       ],
       version: 3,
     },
-  };
+  } as any;
 }
 
-export const sourceMaps = sourceMapsIn;
+export const sourceMaps: SourceMaps = sourceMapsIn;

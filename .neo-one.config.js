@@ -21,13 +21,13 @@ module.exports = {
   },
   migration: {
     // NEO•ONE will load the deployment migration from this path.
-    path: 'neo-one/migration.js',
+    path: 'neo-one/migration.ts',
   },
   codegen: {
     // NEO•ONE will write source artifacts to this directory. This directory should be committed.
     path: 'src/neo-one',
     // NEO•ONE will generate code in the language specified here. Can be one of 'javascript' or 'typescript'.
-    language: 'javascript',
+    language: 'typescript',
     // NEO•ONE will generate client helpers for the framework specified here. Can be one of 'react', 'angular', 'vue' or 'none'.
     framework: 'vue',
     // Set this to true if you're using an environment like Expo that doesn't handle browserifying dependencies automatically.

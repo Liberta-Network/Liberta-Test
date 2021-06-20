@@ -1,4 +1,4 @@
-/* @hash cbf28df23c9cc8cf618c01ca1b0839a9 */
+/* @hash 367dff203a117ea55c5ecde9d1c5a77d */
 // tslint:disable
 /* eslint-disable */
 import { postsABI } from './abi';
@@ -7,7 +7,7 @@ import { sourceMaps } from '../sourceMaps';
 const definition = {
   networks: {
     local: {
-      address: 'ANJaLz957jEeDXueT5Sm7iLXWyqYpLV9TD',
+      address: 'AbqL4thm7wmEQMEh4tDuJBdgs1S8MaEtPa',
     },
   },
   abi: postsABI,

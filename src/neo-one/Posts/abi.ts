@@ -1,7 +1,9 @@
-/* @hash b9215ef2666b0bba1e378876e39d513f */
+/* @hash 559c31b358465bf371f02ccedf71cd24 */
 // tslint:disable
 /* eslint-disable */
-export const postsABI = {
+import { ABI } from '@neo-one/client';
+
+export const postsABI: ABI = {
   events: [
     {
       name: 'postAdded',
