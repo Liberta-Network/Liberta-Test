@@ -21,7 +21,7 @@
         {{ post.content }}
       </div>
       <div class="flex rounded mt-5 py-3 px-3 bg-searchbarBG md:w-1/4">
-        <div class="flex-auto text-gray-700 inline">
+        <div class="flex-auto text-gray-700 inline ">
           <SocialButton
             name="heart-outline"
             nameOnHover="heart"
@@ -32,7 +32,7 @@
           />
         </div>
 
-        <div class="flex-auto text-gray-700 inline">
+        <div class="flex-auto content-center text-gray-700 inline">
           <SocialButton
             name="message-circle-outline"
             nameOnHover="message-circle"

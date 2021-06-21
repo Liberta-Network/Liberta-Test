@@ -1,7 +1,7 @@
 // This is for changing properties when hovering
 
 <template>
-  <a @mouseover="toggleHover(true)" @mouseleave="toggleHover(false)">
+  <a @mouseover="toggleHover(true)" @mouseleave="toggleHover(false)" class="content-around">
     <client-only>
       <eva-icon
         class="mr-1 align-middle"
