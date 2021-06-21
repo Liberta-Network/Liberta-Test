@@ -26,7 +26,9 @@
                 "
                 href="#"
               >
-                <cryptoicon symbol="neo" size="24" color="black" />
+                <client-only>
+                  <cryptoicon symbol="neo" size="24" color="#93cb30" />
+                </client-only>
                 <span class="mx-4 font-medium">NEO</span>
               </a>
               <a
@@ -44,7 +46,9 @@
                 "
                 href="#"
               >
-                <cryptoicon symbol="btc" size="24" color="black" />
+                <client-only>
+                  <cryptoicon symbol="btc" size="24" color="#ff9900" />
+                </client-only>
                 <span class="mx-4 font-medium">BTC</span>
               </a>
               <a
@@ -62,7 +66,9 @@
                 "
                 href="#"
               >
-                <cryptoicon symbol="doge" size="24" color="black" />
+                <client-only>
+                  <cryptoicon symbol="doge" size="24" color="#d9bd62" />
+                </client-only>
                 <span class="mx-4 font-medium">DOGE</span>
               </a>
             </nav>

@@ -20,15 +20,26 @@
       <div class="font-roboto w-340">
         {{ post.content }}
       </div>
-      <div class="flex mt-7">
-        <div class="flex mr-5 text-gray-700 text-sm">
-         <eva-icon class="mr-1" name="heart-outline" width="20" height="20"></eva-icon>
-          <span>8</span>
+      <div class="flex rounded mt-5 py-3 px-3 bg-searchbarBG md:w-1/4">
+        <div class="flex-auto text-gray-700 inline">
+          <SocialButton
+            name="heart-outline"
+            nameOnHover="heart"
+            width="20"
+            height="20"
+            fillColor="red"
+            :count="post.likeCount"
+          />
         </div>
 
-        <div class="flex mr-2 text-gray-700 text-sm">
-          <eva-icon class="mr-1" name="message-circle-outline" width="20" height="20"></eva-icon>
-          <span>8</span>
+        <div class="flex-auto text-gray-700 inline">
+          <SocialButton
+            name="message-circle-outline"
+            nameOnHover="message-circle"
+            width="20"
+            height="20"
+            fillColor="blue"
+          />
         </div>
       </div>
     </div>
@@ -37,7 +48,10 @@
 </template>
 
 <script>
+import SocialButton from "./social-button.vue";
+
 export default {
+  components: { SocialButton },
   props: ["post"],
 };
 </script>

@@ -19,7 +19,7 @@ import Sidebar from "../components/HomePage/sidebar/rsidebar.vue";
 const dummyData = [
   {
     id: 0,
-    owner: "",
+    owner: "Winnerose",
     content:
       "Hello this is my new post.Cillum cupidatat minim non voluptate reprehenderit irure aliqua nulla commodo nisi cillum. Duis sunt incididunt in voluptate ut. Non ea fugiat nostrud dolor in. Tempor et magna qui est nisi enim fugiat esse esse et commodo sunt sit do. Lorem incididunt culpa do veniam magna fugiat do officia velit et. Laborum ut ipsum dolor tempor aliqua reprehenderit do elit tempor reprehenderit Lorem ipsum.",
     likeCount: 0,
@@ -28,7 +28,7 @@ const dummyData = [
   },
   {
     id: 1,
-    owner: "",
+    owner: "Winnerose",
     content: "Hello this is my first post.",
     likeCount: 0,
     shareCount: 0,
@@ -36,7 +36,7 @@ const dummyData = [
   },
   {
     id: 2,
-    owner: "",
+    owner: "Winnerose",
     content: "Hello this is my second post.",
     likeCount: 0,
     shareCount: 0,
@@ -44,7 +44,7 @@ const dummyData = [
   },
   {
     id: 3,
-    owner: "",
+    owner: "Winnerose",
     content: "Hello this is my third post.",
     likeCount: 0,
     shareCount: 0,
