@@ -1,7 +1,17 @@
 <template>
-  <div class="mt-3 hidden md:block flex flex-col pt-2">
-    <div class="h-screen">
-      <SidebarSection title="Top Communites">
+   <div class="bg-main">
+    <HomePageTopbar></HomePageTopbar>
+    <profilecard class="mt-3"></profilecard>
+     <div class="mt-3 hidden md:block flex flex-col pt-2">
+   
+  </div>
+    <div class="max-w-screen-xl mx-auto">
+      <div class="grid grid-cols-2 md:grid-cols-3 content-center">
+        <div class="col-span-2">
+          <Post v-for="post of posts" :post="post" :key="post.id" />
+        </div>
+         <div class="h-screen mt-5">
+      <HomePageSidebarSection title="Top Communites">
         <nav class="mt-4">
           <a
             class="
@@ -58,9 +68,9 @@
             <span class="mx-4 font-medium">DOGE</span>
           </a>
         </nav>
-      </SidebarSection>
+      </HomePageSidebarSection>
 
-      <SidebarSection title="Top Tags">
+      <HomePageSidebarSection title="Top Tags">
         <nav class="mt-4">
           <div class="mt-2 px-6">
             <span class="mx-2 text-tags">#Bitcoin</span><br />
@@ -83,21 +93,49 @@
             <hr class="mt-3" width="200px" />
           </div>
         </nav>
-      </SidebarSection>
+      </HomePageSidebarSection>
+      
+    </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import SidebarSection from "./sidebar-section.vue";
+const dummyData = [
+  {
+    id: 0,
+    owner: "WinneRose",
+    content:
+      "Hello this is my new post.Cillum cupidatat minim non voluptate reprehenderit irure aliqua nulla commodo nisi cillum. Duis sunt incididunt in voluptate ut. Non ea fugiat nostrud dolor in. Tempor et magna qui est nisi enim fugiat esse esse et commodo sunt sit do. Lorem incididunt culpa do veniam magna fugiat do officia velit et. Laborum ut ipsum dolor tempor aliqua reprehenderit do elit tempor reprehenderit Lorem ipsum.",
+    likeCount: 0,
+    shareCount: 0,
+    date: Date.now(),
+  },
+  {
+    id: 1,
+    owner: "WinneRose",
+    content: "Hello this is my first post.",
+    likeCount: 0,
+    shareCount: 0,
+    date: Date.now(),
+  },
+  
+  
+];
 
+import rsidebar from "../components/HomePage/sidebar/rsidebar.vue";
+import Post from "../components/post.vue";
+import Profilecard from '../components/ProfilePage/profilecard.vue';
 export default {
-  components: { SidebarSection },
+     data() {
+    return {
+      posts: dummyData,
+    };
+  },
+  components: { rsidebar,Post, Profilecard }
 };
 </script>
 
 <style>
-.rounded {
-  border-radius: 1rem;
-}
 </style>

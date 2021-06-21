@@ -26,6 +26,7 @@ export default {
     { src: "~/plugins/loading.js" },
     { src: "~/plugins/neocontracts.client.js" },
     { src: "~/plugins/evaicons.client.js" },
+    { src: "~/plugins/vue-cryptoicon.client.js" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

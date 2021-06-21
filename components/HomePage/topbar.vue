@@ -92,61 +92,10 @@
         v-if="!isHidden"
       >
         <div class="text-md font-bold text-libertia lg:flex-grow">
-          <a
-            href="#responsive-header"
-            class="
-              block
-              mt-4
-              lg:inline-block
-              lg:mt-0
-              px-4
-              py-2
-              rounded
-              hover:bg-searchbarBG
-              mr-2
-            "
-          >
-            Home
-          </a>
-
-          <!-- TODO: <topBarButton :click="" text="" /> -->
-          <!-- TODO: <topBarButton :click="" text="" /> -->
-          <!-- TODO: <topBarButton :click="" text="" /> -->
-          <!-- TODO: <topBarButton :click="" text="" /> -->
-          <!-- TODO: <topBarButton :click="" text="" /> -->
-
-          <a
-            href="#responsive-header"
-            class="
-              block
-              mt-4
-              lg:inline-block
-              lg:mt-0
-              px-4
-              py-2
-              rounded
-              hover:bg-searchbarBG
-              mr-2
-            "
-          >
-            Friends
-          </a>
-          <a
-            href="#responsive-header"
-            class="
-              block
-              mt-4
-              lg:inline-block
-              lg:mt-0
-              px-4
-              py-2
-              rounded
-              hover:bg-searchbarBG
-              mr-2
-            "
-          >
-            Groups
-          </a>
+          <libertabutton click="/" text="Home"></libertabutton>
+          <libertabutton click="/explore" text="Explore"></libertabutton>
+          <libertabutton click="/messages" text="Messages"></libertabutton>
+          <libertabutton click="/profile" text="Profile"></libertabutton>
         </div>
 
         <div class="flex">
@@ -176,7 +125,9 @@
   </div>
 </template>
 <script>
+import libertabutton from '../libertabutton.vue';
 export default {
+  components: { libertabutton },
   data: function () {
     return {
       isHidden: false,

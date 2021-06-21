@@ -8,6 +8,7 @@ module.exports = {
       libertabr: "7px"
     },
 
+
     extend: {
       colors: {
         black: colors.black,
@@ -53,6 +54,15 @@ module.exports = {
         "6xl": "4rem",
         "7xl": "5rem",
         tags: "16px",
+      },
+
+      margin: {
+        profilecard: '10rem',
+        smprofilecard: '15px',
+      },
+
+      height: {
+        card: '140px',
       },
     },
   },

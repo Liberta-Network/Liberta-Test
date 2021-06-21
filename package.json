@@ -17,6 +17,7 @@
     "core-js": "^3.9.1",
     "neo-dapi": "^2.0.4",
     "nuxt": "^2.4.5",
+    "vue-cryptoicon": "^0.17.2",
     "vue-eva-icons": "^1.1.1",
     "vue-loading-overlay": "^3.0",
     "yarn": "^1.22.10"
