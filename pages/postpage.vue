@@ -1,5 +1,6 @@
 <template>
-  <div class="bg-main">
+<div>
+<div class="bg-main">
     <HomePageTopbar></HomePageTopbar>
     <div class="max-w-screen-xl mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-3 content-center">
@@ -7,6 +8,8 @@
           <profilecard class="mt-5"></profilecard>
 
           <Post v-for="post of posts" :post="post" :key="post.id" />
+          <Replypost></Replypost>
+          <repliedpost></repliedpost>
         </div>
         <div class="h-screen col-span-1">
         <rsidebar></rsidebar>
@@ -14,9 +17,18 @@
       </div>
     </div>
   </div>
+
+
+
+</div>
 </template>
 
 <script>
+import Rsidebar from '../components/HomePage/sidebar/rsidebar.vue';
+import Post from '../components/post.vue';
+import repliedpost from '../components/Post/repliedpost.vue';
+import Replypost from '../components/Post/replypost.vue';
+
 const dummyData = [
   {
     id: 0,
@@ -27,28 +39,19 @@ const dummyData = [
     shareCount: 0,
     date: Date.now(),
   },
-  {
-    id: 1,
-    owner: "WinneRose",
-    content: "Hello this is my first post.",
-    likeCount: 0,
-    shareCount: 0,
-    date: Date.now(),
-  },
-];
+]
 
-import rsidebar from "../components/HomePage/sidebar/rsidebar.vue";
-import Post from "../components/post.vue";
-import Profilecard from "../components/ProfilePage/profilecard.vue";
 export default {
   data() {
     return {
       posts: dummyData,
     };
   },
-  components: { rsidebar, Post, Profilecard },
+  components: { repliedpost, Post, Rsidebar, Replypost },
+
 };
 </script>
 
 <style>
+
 </style>
