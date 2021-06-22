@@ -1,7 +1,10 @@
 <template>
   <div class="h-auto flex">
     <!-- Start of component -->
-    <div class="w-full rounded bg-white border p-6 tracking-wide mt-5 mx-3">
+    <div
+      class="w-full bg-white border p-6 tracking-wide mt-5 mx-3"
+      v-bind:class="{ rounded: !radiusJustTop, 'rounded-t': radiusJustTop }"
+    >
       <div id="header" class="flex items-center mb-4">
         <img
           alt="avatar"
@@ -21,7 +24,7 @@
         {{ post.content }}
       </div>
       <div class="flex rounded mt-5 py-3 px-3 bg-searchbarBG md:w-1/4">
-        <div class="flex-auto text-gray-700 inline ">
+        <div class="flex-auto text-gray-700 inline">
           <SocialButton
             name="heart-outline"
             nameOnHover="heart"
@@ -52,7 +55,13 @@ import SocialButton from "./social-button.vue";
 
 export default {
   components: { SocialButton },
-  props: ["post"],
+  props: ["post", "radiusJustTop"],
 };
 </script>
  
+<style scoped>
+.rounded-t {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+</style>

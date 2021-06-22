@@ -1,7 +1,7 @@
 <template>
   <div class="h-auto flex">
     <!-- Start of component -->
-    <div class="lg:w-full replyborder bg-white border p-6 tracking-wide  mx-3">
+    <div class="lg:w-full replyborder bg-white border p-6 tracking-wide mx-3">
         <div class="relative mx-auto text-gray-600 lg:block mr-5 ">
         <p class="mb-2 ml-1">Reply To WinneRose</p>
         <input 
