@@ -2,8 +2,14 @@
   <div class="h-auto flex">
     <!-- Start of component -->
     <div
-      class="w-full bg-white border p-6 tracking-wide mt-5 mx-3"
-      v-bind:class="{ rounded: !radiusJustTop, 'rounded-t': radiusJustTop }"
+      class="w-full bg-white border p-6 tracking-wide mt-5 mx-3 cursor-pointer"
+      v-bind:class="{
+        rounded: !radiusJustTop,
+        'rounded-t': radiusJustTop,
+        shadow: hover,
+      }"
+      @mouseover="hover = true"
+      @mouseleave="hover = false"
     >
       <div id="header" class="flex items-center mb-4">
         <img
@@ -56,6 +62,11 @@ import SocialButton from "./social-button.vue";
 export default {
   components: { SocialButton },
   props: ["post", "radiusJustTop"],
+  data() {
+    return {
+      hover: false,
+    };
+  },
 };
 </script>
  
@@ -63,5 +74,9 @@ export default {
 .rounded-t {
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
+}
+.hover-shadow {
+  -webkit-box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.65);
+  box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.65);
 }
 </style>
