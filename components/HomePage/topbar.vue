@@ -60,7 +60,7 @@
       </div>
 
       <!-- This is an example component -->
-      <div class="relative mx-auto text-gray-600 lg:block hidden mr-5">
+      <div class="mx-auto text-gray-600 lg:block hidden mr-5">
         <input
           class="
             bg-searchbarBG
@@ -92,7 +92,7 @@
         v-if="!isHidden"
       >
         <div class="text-md font-bold text-libertia lg:flex-grow">
-          <libertabutton click="/" text="Home"></libertabutton>
+          <libertabutton click="/homepage" text="Home"></libertabutton>
           <libertabutton click="/explore" text="Explore"></libertabutton>
           <libertabutton click="/messages" text="Messages"></libertabutton>
           <libertabutton click="/profile" text="Profile"></libertabutton>

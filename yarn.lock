@@ -12422,6 +12422,11 @@
     "eva-icons" "^1.1.0"
     "vue" "^2.5.17"
 
+"vue-float-action-button@^0.7.9":
+  "integrity" "sha512-f5EmvV6nfUV5bMXFT/3SHG8SaJMf82VW+4zScYpRy7OnqAhZto1XH13qAJsQrGrZ2y0eufeYn66bwozFc0FfJg=="
+  "resolved" "https://registry.npmjs.org/vue-float-action-button/-/vue-float-action-button-0.7.9.tgz"
+  "version" "0.7.9"
+
 "vue-hot-reload-api@^2.3.0":
   "integrity" "sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog=="
   "resolved" "https://registry.npmjs.org/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz"

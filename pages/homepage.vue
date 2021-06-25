@@ -16,6 +16,8 @@
 import Post from "../components/post.vue";
 import Sidebar from "../components/HomePage/sidebar/rsidebar.vue";
 
+import Modal from "../components/Modal.vue";
+
 const dummyData = [
   {
     id: 0,
@@ -56,9 +58,11 @@ export default {
   data() {
     return {
       posts: dummyData,
+      modalShow: true,
     };
   },
-  components: { Post, Sidebar },
+  components: { Post, Sidebar, Modal },
+  methods: {},
 };
 </script>
 

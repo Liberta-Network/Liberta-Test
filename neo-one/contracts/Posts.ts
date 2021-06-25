@@ -123,5 +123,4 @@ export class Posts extends SmartContract {
     post.canBeParent = !post.canBeParent;
     this.postStorage.set(postId, post);
   }
-
 }

@@ -5,9 +5,8 @@ module.exports = {
   theme: {
     borderRadius: {
       libertiabr: "30px",
-      libertabr: "7px"
+      libertabr: "7px",
     },
-
 
     extend: {
       colors: {
@@ -38,6 +37,7 @@ module.exports = {
         libertia: "#388CFC",
         searchbarBG: "#E9F0F4",
         main: "#F9FBFF",
+        "semi-75": "rgba(0, 0, 0, 0.75)",
       },
 
       fontSize: {
@@ -57,12 +57,12 @@ module.exports = {
       },
 
       margin: {
-        profilecard: '10rem',
-        smprofilecard: '15px',
+        profilecard: "10rem",
+        smprofilecard: "15px",
       },
 
       height: {
-        card: '140px',
+        card: "140px",
       },
     },
   },

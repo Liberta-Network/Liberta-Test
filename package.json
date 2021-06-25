@@ -19,6 +19,7 @@
     "nuxt": "^2.4.5",
     "vue-cryptoicon": "^0.17.2",
     "vue-eva-icons": "^1.1.1",
+    "vue-float-action-button": "^0.7.9",
     "vue-loading-overlay": "^3.0",
     "yarn": "^1.22.10"
   },
