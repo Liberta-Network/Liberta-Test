@@ -14,11 +14,9 @@ type Post = {
   canBeParent: boolean;
   owner: Address;
   content: string;
-  likeCount: number;
-  shareCount: number;
   commentCount: number;
+  shareCount: number;
   date: number;
-  likes: Address[]
   images: string[],
 }
 
@@ -33,7 +31,7 @@ export class Posts extends SmartContract {
     if (!Address.isCaller(owner)) throw ("Error: Address is not caller.")
 
     const parentPost = this.getPostById(parentPostId);
-    if (!parentPost.canBeParent && parentPostId != -1)
+    if (!parentPost.canBeParent)
       throw ("Error: Parent post can not be parent.");
 
 
@@ -47,13 +45,11 @@ export class Posts extends SmartContract {
 
     const post = {
       id: this.postCount, owner, content,
-      likeCount: 0,
       shareCount: 0,
       commentCount: 0,
       parentPostId,
       canBeParent: true,
       date: Blockchain.currentBlockTime,
-      likes: [],
       images
     } as Post;
 
@@ -97,16 +93,6 @@ export class Posts extends SmartContract {
     this.postStorage.set(postId, post);
   }
 
-  public toggleCanBeParent(owner: Address, postId: number) {
-    if (!Address.isCaller(owner)) throw ("Error: Address is not caller.")
-
-    const post = this.getPostById(postId);
-    if (post.owner != owner) throw ("Post's owner is not caller");
-
-    post.canBeParent = !post.canBeParent;
-    this.postStorage.set(postId, post);
-  }
-
   @constant
   public getPostsByAddress(owner: Address): Post[] {
     const posts: Post[] = [];
@@ -127,36 +113,15 @@ export class Posts extends SmartContract {
     return post;
   }
 
-  public likePost(owner: Address, postId: number) {
-    if (!Address.isCaller(owner)) throw ("Error: Address is not caller.")
+  public toggleParentPost(owner: Address, postId: number) {
+    if (!Address.isCaller(owner)) throw ("Error: Address is not caller.");
 
-    const post = this.getPostById(postId);
+    const post = this.getPostById(postId)
 
-    if (post.likes.filter(like => like == owner).length > 0) throw ("Error: Already liked this post.")
+    if (post.owner != owner) throw ("Error: post's owner is not caller.")
 
-    post.likes.push(owner);
-    post.likeCount++;
-
+    post.canBeParent = !post.canBeParent;
     this.postStorage.set(postId, post);
   }
 
-  public unlikePost(owner: Address, postId: number) {
-    if (!Address.isCaller(owner)) throw ("Error: Address is not caller.")
-
-    const post = this.getPostById(postId);
-
-    let likedPost = -1;
-    for (let i = 0; i < post.likes.length; i++)
-      if (post.likes[i] == owner)
-        likedPost = i;
-
-
-    if (likedPost == -1) throw ("Error: Already didn't like this post.");
-
-    post.likes = post.likes.filter(obj => obj !== owner);
-
-    post.likeCount--;
-
-    this.postStorage.set(postId, post);
-  }
 }

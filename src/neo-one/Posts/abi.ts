@@ -1,4 +1,4 @@
-/* @hash 559c31b358465bf371f02ccedf71cd24 */
+/* @hash a07efd817601e71988aac031f8cd4f40 */
 // tslint:disable
 /* eslint-disable */
 import { ABI } from '@neo-one/client';
@@ -13,6 +13,17 @@ export const postsABI: ABI = {
           name: 'post',
           optional: false,
           properties: {
+            canBeParent: {
+              forwardedValue: false,
+              optional: false,
+              type: 'Boolean',
+            },
+            commentCount: {
+              decimals: 0,
+              forwardedValue: false,
+              optional: false,
+              type: 'Integer',
+            },
             content: {
               forwardedValue: false,
               optional: false,
@@ -30,16 +41,26 @@ export const postsABI: ABI = {
               optional: false,
               type: 'Integer',
             },
-            likeCount: {
-              decimals: 0,
+            images: {
               forwardedValue: false,
               optional: false,
-              type: 'Integer',
+              type: 'Array',
+              value: {
+                forwardedValue: false,
+                optional: false,
+                type: 'String',
+              },
             },
             owner: {
               forwardedValue: false,
               optional: false,
               type: 'Address',
+            },
+            parentPostId: {
+              decimals: 0,
+              forwardedValue: false,
+              optional: false,
+              type: 'Integer',
             },
             shareCount: {
               decimals: 0,
@@ -71,12 +92,90 @@ export const postsABI: ABI = {
           optional: false,
           type: 'String',
         },
+        {
+          decimals: 0,
+          forwardedValue: false,
+          name: 'parentPostId',
+          optional: true,
+          type: 'Integer',
+        },
+        {
+          forwardedValue: false,
+          name: 'images',
+          optional: true,
+          type: 'Array',
+          value: {
+            forwardedValue: false,
+            optional: false,
+            type: 'String',
+          },
+        },
       ],
       receive: false,
       returnType: {
         forwardedValue: false,
         optional: false,
         type: 'Boolean',
+      },
+      send: false,
+      sendUnsafe: false,
+    },
+    {
+      claim: false,
+      constant: false,
+      name: 'deletePost',
+      parameters: [
+        {
+          forwardedValue: false,
+          name: 'owner',
+          optional: false,
+          type: 'Address',
+        },
+        {
+          decimals: 0,
+          forwardedValue: false,
+          name: 'postId',
+          optional: false,
+          type: 'Integer',
+        },
+      ],
+      receive: false,
+      returnType: {
+        optional: false,
+        type: 'Void',
+      },
+      send: false,
+      sendUnsafe: false,
+    },
+    {
+      claim: false,
+      constant: false,
+      name: 'editPost',
+      parameters: [
+        {
+          forwardedValue: false,
+          name: 'owner',
+          optional: false,
+          type: 'Address',
+        },
+        {
+          decimals: 0,
+          forwardedValue: false,
+          name: 'postId',
+          optional: false,
+          type: 'Integer',
+        },
+        {
+          forwardedValue: false,
+          name: 'newContent',
+          optional: false,
+          type: 'String',
+        },
+      ],
+      receive: false,
+      returnType: {
+        optional: false,
+        type: 'Void',
       },
       send: false,
       sendUnsafe: false,
@@ -102,6 +201,17 @@ export const postsABI: ABI = {
           forwardedValue: false,
           optional: false,
           properties: {
+            canBeParent: {
+              forwardedValue: false,
+              optional: false,
+              type: 'Boolean',
+            },
+            commentCount: {
+              decimals: 0,
+              forwardedValue: false,
+              optional: false,
+              type: 'Integer',
+            },
             content: {
               forwardedValue: false,
               optional: false,
@@ -119,16 +229,26 @@ export const postsABI: ABI = {
               optional: false,
               type: 'Integer',
             },
-            likeCount: {
-              decimals: 0,
+            images: {
               forwardedValue: false,
               optional: false,
-              type: 'Integer',
+              type: 'Array',
+              value: {
+                forwardedValue: false,
+                optional: false,
+                type: 'String',
+              },
             },
             owner: {
               forwardedValue: false,
               optional: false,
               type: 'Address',
+            },
+            parentPostId: {
+              decimals: 0,
+              forwardedValue: false,
+              optional: false,
+              type: 'Integer',
             },
             shareCount: {
               decimals: 0,
@@ -139,6 +259,33 @@ export const postsABI: ABI = {
           },
           type: 'Object',
         },
+      },
+      send: false,
+      sendUnsafe: false,
+    },
+    {
+      claim: false,
+      constant: false,
+      name: 'toggleParentPost',
+      parameters: [
+        {
+          forwardedValue: false,
+          name: 'owner',
+          optional: false,
+          type: 'Address',
+        },
+        {
+          decimals: 0,
+          forwardedValue: false,
+          name: 'postId',
+          optional: false,
+          type: 'Integer',
+        },
+      ],
+      receive: false,
+      returnType: {
+        optional: false,
+        type: 'Void',
       },
       send: false,
       sendUnsafe: false,
