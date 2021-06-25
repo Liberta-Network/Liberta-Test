@@ -55,8 +55,9 @@ export class Follows extends SmartContract {
   }
 
   public unfollowUser(owner: Address, followingUser: Address) {
-    let unfollowed = false;
     if (!Address.isCaller(owner)) throw ("Error: Address is not caller.");
+
+    let unfollowed = false;
 
     this.followStorage.forEach(follow => {
       if (follow.follower == owner && follow.following == followingUser) {
