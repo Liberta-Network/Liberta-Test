@@ -6,6 +6,8 @@ type UserInfo = {
   username: string;
   fullname: string;
   biography: string;
+  legitReportCount: number;
+  wrongReportCount: number;
 };
 
 // TODO: Private account option
@@ -21,11 +23,32 @@ export class UserInfos extends SmartContract {
     return info;
   }
 
+  @constant
+  public checkUsernameAvailable(_username: String, owner: Address = Address.from('NKuyBkoGdZZSLyPbJEetheRhMjeznFZszf')): boolean {
+    let available = true;
+
+    this.userInfoStorage.forEach(userInfo => {
+      if (userInfo.username == _username && owner != userInfo.address) available = false;
+    })
+
+    return available;
+  }
+
   public setUserInfo(owner: Address, profileImage: string, username: string, fullname: string, biography: string) {
     if (!Address.isCaller(owner)) throw ("Error: address is not caller.");
 
-    const info = { address: owner, profileImage, username, fullname, biography } as UserInfo;
+    const user = this.getUserInfoByAddress(owner);
 
-    this.userInfoStorage.set(owner, info);
+    if (!this.checkUsernameAvailable(username, owner))
+      throw ("Error: This username is taken.")
+
+    user.profileImage = profileImage;
+    user.username = username;
+    user.fullname = fullname;
+    user.biography = biography;
+    user.legitReportCount = user.legitReportCount || 0;
+    user.wrongReportCount = user.wrongReportCount || 0;
+
+    this.userInfoStorage.set(owner, user);
   }
 }
