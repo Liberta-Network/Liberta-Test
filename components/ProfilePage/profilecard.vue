@@ -110,6 +110,6 @@ export default {};
 
 <style>
 .rounded-full {
-  border-radius: 100%;
+  border-radius: 9999px;
 }
 </style>
