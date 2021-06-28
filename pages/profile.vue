@@ -9,7 +9,7 @@
           <Post v-for="post of posts" :post="post" :key="post.id" />
         </div>
         <div class="h-screen col-span-1">
-        <rsidebar></rsidebar>
+          <rsidebar />
         </div>
       </div>
     </div>
