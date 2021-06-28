@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-white border mt-5 mx-44 w-auto">
+  <div class="bg-white border mt-5 w-auto">
     <div class="flex flex-row content-between rounded-libertiabr">
       <div class="flex-auto">
-        <div class="ml-10">
-          <nav class="mt-4 ml-16">
+        <div class="mx-10">
+          <nav class="mt-4">
             <div class="flex">
               <h1 class="text-xl font-bold mb-7 mt-5">Profile Settings</h1>
             </div>
@@ -18,9 +18,9 @@
                   walletcode
                 </h4>
 
-                <a class="text-libertia text-sm" href="../homepage"
-                  >Change Profile Picture</a
-                >
+                <a class="text-libertia text-sm" href="../homepage">
+                  Change Profile Picture
+                </a>
               </div>
             </div>
             <form class="bg-white rounded">
@@ -35,7 +35,8 @@
                   class="
                     bg-searchbarBG
                     h-10
-                     w-2/4
+                    w-full
+                    md:w-2/4
                     px-4
                     rounded
                     text-sm
@@ -45,7 +46,6 @@
                   type="text"
                   placeholder="Your Name"
                 />
-                
               </div>
 
               <div class="mb-8">
@@ -59,7 +59,8 @@
                   class="
                     bg-searchbarBG
                     h-10
-                    w-2/4
+                    w-full
+                    md:w-2/4
                     px-4
                     rounded
                     text-sm
@@ -69,19 +70,43 @@
                   type="text"
                   placeholder="Username"
                 />
-                
+              </div>
+
+              <div class="mb-8">
+                <label
+                  class="block text-gray-700 text-sm font-bold mb-2"
+                  for="name"
+                >
+                  Biography
+                </label>
+                <textarea
+                  class="
+                    bg-searchbarBG
+                    px-4
+                    py-3
+                    rounded
+                    text-sm
+                    w-full
+                    md:w-2/4
+                    focus:outline-none
+                  "
+                  id="biography"
+                  type="text"
+                  rows="3"
+                  placeholder="Biography"
+                />
               </div>
               <div class="mb-8">
-               <label class="md:w-2/3 block text-gray-500 font-bold">
-      <input class="mr-1 leading-tight" type="checkbox">
-      <span class="text-sm">
-        Private Account
-      </span>
-    </label>
-                
+                <label class="md:w-2/3 block inline-flex items-center">
+                  <input class="mr-3 leading-tight" type="checkbox" />
+                  <span class="text-sm"> Private Account </span>
+                </label>
               </div>
-<libertabutton text="Save" click="../homepage" class="bg-libertia text-white rounded-libertabr hover:text-current hover:bg-current mb-8"/>
-              
+              <libertabutton
+                text="Save"
+                click="../homepage"
+                class="mb-8 text-libertia font-bold"
+              />
             </form>
           </nav>
         </div>
@@ -91,11 +116,18 @@
 </template>
 
 <script>
-import Libertabutton from '../libertabutton.vue';
-export default {};
+import Libertabutton from "../libertabutton.vue";
+export default {
+  components: { Libertabutton },
+};
 </script>
 
-<style>
+<style scoped>
+.rounded-full {
+  border-radius: 9999px;
+}
 
+.rounded {
+  border-radius: 0.5rem;
+}
 </style>
-Libertabutton
