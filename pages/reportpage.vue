@@ -7,6 +7,26 @@
           <reportuser />
         </div>
         <div class="h-screen col-span-1">
+          <div class="mb-4 mt-2">
+            <a
+              href="#"
+              class="
+                block
+                bg-libertia
+                hover:bg-blue-700
+                text-white
+                font-bold
+                py-3
+                px-4
+                rounded-full
+                mb-3
+                w-full
+                text-center
+              "
+            >
+              See My Guardia Rewards
+            </a>
+          </div>
           <reportsidebar class="mt-2" />
         </div>
       </div>
