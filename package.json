@@ -9,7 +9,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "@neo-one/client": "^2.7.3",
+    "@neo-one/cli": "^3.5.4-rc3",
+    "@neo-one/client": "^3.5.4-rc3",
+    "@neo-one/smart-contract": "^3.5.3-rc3",
+    "@neo-one/smart-contract-lib": "^3.5.4-rc3",
+    "@neo-one/smart-contract-test": "^3.5.4-rc3",
+    "@neo-one/smart-contract-typescript-plugin": "^3.5.4-rc3",
     "@neo-one/suite": "^2.7.2",
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/axios": "^5.13.1",

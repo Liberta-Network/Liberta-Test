@@ -1010,6 +1010,24 @@
     "ts-node" "^8.4.1"
     "tslib" "^1.10.0"
 
+"@neo-one/cli-common-node@3.5.4-rc3":
+  "integrity" "sha512-HSE4MZazp4l6/JA+57TCzYGdUEnOUec/FicuxNriQ5BqYBFm+nQEBkm1txWBy01YH55Cf2K1DzredTZQJEw+/A=="
+  "resolved" "https://registry.npmjs.org/@neo-one/cli-common-node/-/cli-common-node-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/cli-common" "3.5.4-rc3"
+    "@neo-one/client-core" "3.5.4-rc3"
+    "@neo-one/client-full-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "@types/lodash" "^4.14.138"
+    "cosmiconfig" "^6.0.0"
+    "fs-extra" "^8.1.0"
+    "lodash" "^4.17.15"
+    "prompts" "^2.2.1"
+    "schema-utils" "^2.1.0"
+    "ts-node" "^8.4.1"
+    "tslib" "^1.10.0"
+
 "@neo-one/cli-common@^2.7.3":
   "integrity" "sha512-uX56gdgsH/C7oqjzC2SmOuCxygZHydHOmDm0anSQes6A0/UQMIPeHjdWfvAsb8c3Nzwxp2b0Y02E69FZ0c53eQ=="
   "resolved" "https://registry.npmjs.org/@neo-one/cli-common/-/cli-common-2.7.3.tgz"
@@ -1019,6 +1037,18 @@
     "@neo-one/client-core" "^2.7.3"
     "@neo-one/client-full-core" "^2.7.3"
     "@neo-one/utils" "^2.6.1"
+    "bignumber.js" "^9.0.0"
+    "tslib" "^1.10.0"
+
+"@neo-one/cli-common@3.5.4-rc3":
+  "integrity" "sha512-ILD50mS3vhke/jEfdijd2czNuDBpJX/jdEYsa+2tlLhofo8Ou3Itm+sxau+YN0TV1DHwY4GM3S5IHn/UP2N2lQ=="
+  "resolved" "https://registry.npmjs.org/@neo-one/cli-common/-/cli-common-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/client-core" "3.5.4-rc3"
+    "@neo-one/client-full-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
     "bignumber.js" "^9.0.0"
     "tslib" "^1.10.0"
 
@@ -1067,6 +1097,51 @@
     "typescript" "3.9.5"
     "yargs" "^14.2.0"
 
+"@neo-one/cli@^3.5.4-rc3":
+  "integrity" "sha512-kRrsHw2x7Kzs4F85g4Poxf7mwnuvG0FfMJaq9vmnct7bKWZXKxrTw3ig+FNiwJZe8KpqvExQM3L4rSEy/tXBKA=="
+  "resolved" "https://registry.npmjs.org/@neo-one/cli/-/cli-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@babel/core" "^7.6.2"
+    "@babel/register" "^7.5.5"
+    "@neo-one/cli-common" "3.5.4-rc3"
+    "@neo-one/cli-common-node" "3.5.4-rc3"
+    "@neo-one/client" "3.5.4-rc3"
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/client-core" "3.5.4-rc3"
+    "@neo-one/client-full" "3.5.4-rc3"
+    "@neo-one/client-full-core" "3.5.4-rc3"
+    "@neo-one/client-switch" "3.5.4-rc3"
+    "@neo-one/logger" "2.8.0-rc3"
+    "@neo-one/logger-config" "^2.6.1"
+    "@neo-one/node" "3.5.4-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/node-neo-settings" "3.5.4-rc3"
+    "@neo-one/smart-contract-codegen" "3.5.4-rc3"
+    "@neo-one/smart-contract-compiler" "3.5.4-rc3"
+    "@neo-one/smart-contract-compiler-node" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "@neo-one/utils-node" "2.8.0-rc3"
+    "@types/listr" "^0.14.2"
+    "@types/yargs" "^13.0.3"
+    "bignumber.js" "^9.0.0"
+    "bn.js" "^5.0.0"
+    "cross-fetch" "^3.0.4"
+    "execa" "^3.2.0"
+    "fs-extra" "^8.1.0"
+    "import-local" "^3.0.2"
+    "jszip" "^3.5.0"
+    "listr" "^0.14.3"
+    "lodash" "^4.17.15"
+    "nodemon" "^2.0.1"
+    "prompts" "^2.2.1"
+    "safe-stable-stringify" "^1.1.0"
+    "source-map" "^0.7.3"
+    "ts-node" "^8.4.1"
+    "tslib" "^1.10.0"
+    "typescript" "3.9.5"
+    "yargs" "^14.2.0"
+
 "@neo-one/client-common@^2.7.3":
   "integrity" "sha512-J3JcZN8MXVfsuVDKlLjFXm1JsAarGZHm5rf+CNcsHaohwdGvWVc4Ud1BRxbVSxkYcObkoaJD6ayHy//m1mwf9w=="
   "resolved" "https://registry.npmjs.org/@neo-one/client-common/-/client-common-2.7.3.tgz"
@@ -1074,6 +1149,28 @@
   dependencies:
     "@neo-one/ec-key" "^0.1.0"
     "@neo-one/utils" "^2.6.1"
+    "@types/bn.js" "^4.11.5"
+    "bignumber.js" "^9.0.0"
+    "bn.js" "^5.0.0"
+    "bs58" "^4.0.1"
+    "buffer-xor" "^2.0.2"
+    "elliptic" "^6.5.3"
+    "hash.js" "^1.1.7"
+    "lodash" "^4.17.15"
+    "rxjs" "^6.5.3"
+    "safe-stable-stringify" "^1.1.0"
+    "scrypt-js" "^2.0.3"
+    "source-map" "^0.7.3"
+    "tslib" "^1.10.0"
+    "wif" "^2.0.6"
+
+"@neo-one/client-common@3.5.4-rc3":
+  "integrity" "sha512-9E4jMKIbZiwAvH6JtaTfK4EY8JvMGEGiPmb/pfTaUrA/k2Qu2r5YxMLbGLEth3tf3gYOQLcRjnLOROnVAtjpFQ=="
+  "resolved" "https://registry.npmjs.org/@neo-one/client-common/-/client-common-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/ec-key" "^0.1.0"
+    "@neo-one/utils" "3.3.0-rc3"
     "@types/bn.js" "^4.11.5"
     "bignumber.js" "^9.0.0"
     "bn.js" "^5.0.0"
@@ -1112,6 +1209,29 @@
     "tapable" "^1.1.3"
     "tslib" "^1.10.0"
 
+"@neo-one/client-core@3.5.4-rc3":
+  "integrity" "sha512-WpewTe9l48ZDZATvlyYqA5UGCDQKCZ8bYNXxwIjHrhT29I/h1LFrEA0u5tHxN/ZEVxOa+m/NS00O0Ar5nrR3fA=="
+  "resolved" "https://registry.npmjs.org/@neo-one/client-core/-/client-core-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/client-switch" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "@reactivex/ix-es2015-cjs" "^2.5.3"
+    "@reactivex/ix-esnext-esm" "^2.5.3"
+    "@types/bn.js" "^4.11.5"
+    "@types/tapable" "^1.0.4"
+    "bignumber.js" "^9.0.0"
+    "bn.js" "^5.0.0"
+    "cross-fetch" "^3.0.4"
+    "dataloader" "^2.0.0"
+    "debug" "^4.1.1"
+    "lodash" "^4.17.15"
+    "rxjs" "^6.5.3"
+    "safe-stable-stringify" "^1.1.0"
+    "tapable" "^1.1.3"
+    "tslib" "^1.10.0"
+
 "@neo-one/client-full-common@^2.7.3":
   "integrity" "sha512-T08hsBDRQCqXfbE+2iGy/KD9+BRu4tkFrnF+LQUNKxLYlIPSSOgP34Inldi0tk75BiFHNIPIkg6mjuxRQe4Amg=="
   "resolved" "https://registry.npmjs.org/@neo-one/client-full-common/-/client-full-common-2.7.3.tgz"
@@ -1119,6 +1239,15 @@
   dependencies:
     "@neo-one/client-common" "^2.7.3"
     "@neo-one/utils" "^2.6.1"
+    "tslib" "^1.10.0"
+
+"@neo-one/client-full-common@3.5.4-rc3":
+  "integrity" "sha512-a6jESLQ5b4r3RhF0ykrobOBNxHmfmn3W7lXbxLXOo+gIwYy5Ly7hT2Km5RciSUZB+kRySDD6FzLGUJRFO6gKgA=="
+  "resolved" "https://registry.npmjs.org/@neo-one/client-full-common/-/client-full-common-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
     "tslib" "^1.10.0"
 
 "@neo-one/client-full-core@^2.7.3":
@@ -1135,6 +1264,20 @@
     "lodash" "^4.17.15"
     "tslib" "^1.10.0"
 
+"@neo-one/client-full-core@3.5.4-rc3":
+  "integrity" "sha512-wb4Ot/y3MavPx9cbBJBo4d1Z5IN9ucz2MiXJVlr0qZkb9sxRipNk40fSx/vOYr0NwBLcs12R0sjRtwhQ+Aj5Aw=="
+  "resolved" "https://registry.npmjs.org/@neo-one/client-full-core/-/client-full-core-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/client-core" "3.5.4-rc3"
+    "@neo-one/client-full-common" "3.5.4-rc3"
+    "@neo-one/client-switch" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "bignumber.js" "^9.0.0"
+    "lodash" "^4.17.15"
+    "tslib" "^1.10.0"
+
 "@neo-one/client-full@^2.7.3":
   "integrity" "sha512-QTn5KY3k40dUw4mkS/CkWbvevQYKDKnIOdh1/jWL1TtR87a63FKTfqyQdphpUik5zgh4HeR+kocFB7lm6vLzHg=="
   "resolved" "https://registry.npmjs.org/@neo-one/client-full/-/client-full-2.7.3.tgz"
@@ -1142,6 +1285,14 @@
   dependencies:
     "@neo-one/client" "^2.7.3"
     "@neo-one/client-full-core" "^2.7.3"
+
+"@neo-one/client-full@3.5.4-rc3":
+  "integrity" "sha512-cheBIXpcKz8Y/g9dxZJGGGvdh+q1loVzqFncF9+OP+CkUuZEhZc4cnOA4MFkrFpwZJGjktpFoWo/T27iIa3vnw=="
+  "resolved" "https://registry.npmjs.org/@neo-one/client-full/-/client-full-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client" "3.5.4-rc3"
+    "@neo-one/client-full-core" "3.5.4-rc3"
 
 "@neo-one/client-switch@^2.7.3":
   "integrity" "sha512-HMmnQiDrLqNujgRykuD6ZYZToerx4hoxmnSQsuOm9fylHxHyLgJc0yJRWv1ojZ29h5EYXeQzkeR8wBUsrRdzow=="
@@ -1160,6 +1311,23 @@
   optionalDependencies:
     "@ledgerhq/hw-transport-node-hid" "^4.68.2"
 
+"@neo-one/client-switch@3.5.4-rc3":
+  "integrity" "sha512-6s2QVad3FMvZlfiKhinlmZyRHXmS/vyLw+TeGY6qY5nKOVUXPuxLw3jKHfjzR5w03c3u7LHRqQibSYBkGtaWFA=="
+  "resolved" "https://registry.npmjs.org/@neo-one/client-switch/-/client-switch-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@ledgerhq/hw-transport-u2f" "^4.68.2"
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "lodash" "^4.17.15"
+    "regenerator-runtime" "^0.13.3"
+    "source-map" "^0.7.3"
+    "tslib" "^1.10.0"
+  optionalDependencies:
+    "@ledgerhq/hw-transport-node-hid" "^4.68.2"
+
 "@neo-one/client@^2.7.3":
   "integrity" "sha512-vWjoI6FblI/jqmoKIyadc1njiA3IoRZU/5qkfu2ygo2rD7q6LPG5uE1NlHnI54/B2uhchraSgbBrKSq9grTTDg=="
   "resolved" "https://registry.npmjs.org/@neo-one/client/-/client-2.7.3.tgz"
@@ -1168,6 +1336,15 @@
     "@neo-one/client-common" "^2.7.3"
     "@neo-one/client-core" "^2.7.3"
     "@neo-one/developer-tools" "^2.7.3"
+
+"@neo-one/client@^3.5.4-rc3", "@neo-one/client@3.5.4-rc3":
+  "integrity" "sha512-cpepqbgxtJcd6y6q2EaaH0avOd2TGn9FBlwPggfXG0mSxdOzYPiO5ULPNA6nk9lIPkT3T0NMfu+LTiRdZLCi1w=="
+  "resolved" "https://registry.npmjs.org/@neo-one/client/-/client-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/client-core" "3.5.4-rc3"
+    "@neo-one/developer-tools" "3.5.4-rc3"
 
 "@neo-one/developer-tools@^2.7.3":
   "integrity" "sha512-N+5Efvq6qyToePvwIex1QDzyRq62f04iVsexuZb298X2bocsaQ49ASXTR/hNqKfs/9xEnitHClL9GYhvMZM5Ew=="
@@ -1178,12 +1355,29 @@
     "resize-observer-polyfill" "^1.5.0"
     "tslib" "^1.10.0"
 
+"@neo-one/developer-tools@3.5.4-rc3":
+  "integrity" "sha512-Jt6DiAuORK7umwSnbSQx6IVcxVtl1T/R1iSgh5C8Nb12QAcJHLKgRRGAkmLijYflrtXUvI4eskpENuW3IphjQg=="
+  "resolved" "https://registry.npmjs.org/@neo-one/developer-tools/-/developer-tools-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-core" "3.5.4-rc3"
+    "resize-observer-polyfill" "^1.5.0"
+    "tslib" "^1.10.0"
+
 "@neo-one/ec-key@^0.1.0":
   "integrity" "sha512-qciOVDhfXGlSiamCu+yntG9+2fyEJGvraWNGROBxtOlbRQLS+H92vNJVonMqYKyZDeDBu+JWprcEg525K5wJLA=="
   "resolved" "https://registry.npmjs.org/@neo-one/ec-key/-/ec-key-0.1.0.tgz"
   "version" "0.1.0"
   dependencies:
     "asn1.js" "^1.0.4"
+
+"@neo-one/edge@^15.0.0":
+  "integrity" "sha512-oBxcE1r5vNHreZmQYWnVZLniJXBVv6A5VY5Viqd3hF7WcEa9aT2Z+3bSgvHtT6TykIJhonXwBoilcFdS08Ux6A=="
+  "resolved" "https://registry.npmjs.org/@neo-one/edge/-/edge-15.0.0.tgz"
+  "version" "15.0.0"
+  dependencies:
+    "edge-cs" "1.2.1"
+    "nan" "^2.14.0"
 
 "@neo-one/http-context@^2.7.3":
   "integrity" "sha512-77DtY3jnjukC0iZqr8TzKuNEMZPdg4BqRe89pvXiEZgVL0QGnauzVhjmZO2bfRi2r508G6QXj57qQqx3/JXYnw=="
@@ -1197,10 +1391,37 @@
     "koa" "^2.7.0"
     "tslib" "^1.10.0"
 
+"@neo-one/http-context@3.5.4-rc3":
+  "integrity" "sha512-rcvuzNcWs6Gc7NXWkkCZryjC16DvM+hJF6ytR1o/OH3yoNkltq1Hv/NuKxaA8nzlTiA5qLiwMBkx46Xc9lO57g=="
+  "resolved" "https://registry.npmjs.org/@neo-one/http-context/-/http-context-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-switch" "3.5.4-rc3"
+    "@neo-one/logger" "2.8.0-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "@types/koa" "^2.0.49"
+    "koa" "^2.7.0"
+    "tslib" "^1.10.0"
+
 "@neo-one/http@^2.7.3":
   "integrity" "sha512-HbJCNq9kwf3hi6E4WTGa7KJtpzO+Jq1tk6GBD/BIbwF8SIsEIJt3hj78K/vSaDPKrsI6Tdhlh8J08K6vQfL7oQ=="
   "resolved" "https://registry.npmjs.org/@neo-one/http/-/http-2.7.3.tgz"
   "version" "2.7.3"
+  dependencies:
+    "@types/koa" "^2.0.49"
+    "@types/koa-bodyparser" "^4.3.0"
+    "@types/koa-convert" "^1.2.2"
+    "@types/koa-cors" "^0.0.0"
+    "koa" "^2.7.0"
+    "koa-bodyparser" "^4.2.1"
+    "koa-convert" "^1.2.0"
+    "koa-cors" "^0.0.16"
+    "tslib" "^1.10.0"
+
+"@neo-one/http@3.5.3-rc3":
+  "integrity" "sha512-FFXoZMW0Cj+EfwTdS/jj+TaFAOzcRytudM0/uvNYBIbwh7nmrishNMRzDu/nUo995q17wXqf0ABkYQJADhI85w=="
+  "resolved" "https://registry.npmjs.org/@neo-one/http/-/http-3.5.3-rc3.tgz"
+  "version" "3.5.3-rc3"
   dependencies:
     "@types/koa" "^2.0.49"
     "@types/koa-bodyparser" "^4.3.0"
@@ -1230,6 +1451,17 @@
     "pino-pretty" "^3.2.1"
     "tslib" "^1.10.0"
 
+"@neo-one/logger@2.8.0-rc3":
+  "integrity" "sha512-6HoSmaiDt61zR/3fwkZMwiazDKlLgaMwNQgzA8Z71OT44+jcds+rdg8sroMt1ljHSCdPGrIcRt5ttWOG3SVQoQ=="
+  "resolved" "https://registry.npmjs.org/@neo-one/logger/-/logger-2.8.0-rc3.tgz"
+  "version" "2.8.0-rc3"
+  dependencies:
+    "@neo-one/logger-config" "^2.6.1"
+    "@types/pino" "^5.8.9"
+    "pino" "^5.12.6"
+    "pino-pretty" "^3.2.1"
+    "tslib" "^1.10.0"
+
 "@neo-one/node-blockchain@^2.7.3":
   "integrity" "sha512-CdpFvQO1DQEVjxYLLN1XttDUf8oV7dKEOVssCM9WMBC3bfWeSQ7Jii/HqvyrqDVDbTEq5KQwbFrMg7sxNXc+Ow=="
   "resolved" "https://registry.npmjs.org/@neo-one/node-blockchain/-/node-blockchain-2.7.3.tgz"
@@ -1247,6 +1479,21 @@
     "rxjs" "^6.5.3"
     "tslib" "^1.10.0"
 
+"@neo-one/node-blockchain@3.5.4-rc3":
+  "integrity" "sha512-2C3C+fGn95MT7gQbPcclzZ1+1LLHEZ2opZRNzz1h/r00RpTCqv3hAYycv9LlOVVe9Xf9ZncSZLaMfiJswJ08MA=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node-blockchain/-/node-blockchain-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/logger" "2.8.0-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "bn.js" "^5.0.0"
+    "js-priority-queue" "^0.1.5"
+    "lodash" "^4.17.15"
+    "lru-cache" "^5.0.0"
+    "rxjs" "^6.5.3"
+
 "@neo-one/node-consensus@^2.7.3":
   "integrity" "sha512-JoWYp5mW+RZA5PLxEsuSMC8eQo30EgV1AwAF9Wh2/0+3u0GnkNwk/CYjUiZQzlP+TrHO2/H4VVbVs4sNwMw+OQ=="
   "resolved" "https://registry.npmjs.org/@neo-one/node-consensus/-/node-consensus-2.7.3.tgz"
@@ -1256,6 +1503,23 @@
     "@neo-one/logger" "^2.6.2"
     "@neo-one/node-core" "^2.7.3"
     "@neo-one/utils" "^2.6.1"
+    "@reactivex/ix-es2015-cjs" "^2.5.3"
+    "@reactivex/ix-esnext-esm" "^2.5.3"
+    "@types/bn.js" "^4.11.5"
+    "bignumber.js" "^9.0.0"
+    "bn.js" "^5.0.0"
+    "lodash" "^4.17.15"
+    "tslib" "^1.10.0"
+
+"@neo-one/node-consensus@3.5.4-rc3":
+  "integrity" "sha512-ORX3ssETKozEU5LhiP0JvOmp/m2UuFsvsdCiZL7BfAggWFEKSQGTtbSyEf9ee2d/PMTvad8lbJm5n0Bg4RysaQ=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node-consensus/-/node-consensus-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/logger" "2.8.0-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
     "@reactivex/ix-es2015-cjs" "^2.5.3"
     "@reactivex/ix-esnext-esm" "^2.5.3"
     "@types/bn.js" "^4.11.5"
@@ -1279,6 +1543,21 @@
     "rxjs" "^6.5.3"
     "through" "^2.3.8"
     "tslib" "^1.10.0"
+
+"@neo-one/node-core@3.5.4-rc3":
+  "integrity" "sha512-szeVwnIR37lpKVi8GnTg2xb/0rFsEckQnoibTHTfIO38caBM+A//G4KnXwRuDsZQnZQHUdc+CQyNXscQ3RreCw=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node-core/-/node-core-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/client-full-common" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "bignumber.js" "^9.0.0"
+    "bn.js" "^5.0.0"
+    "immutable" "^4.0.0-rc.12"
+    "lodash" "^4.17.15"
+    "rxjs" "^6.5.3"
+    "through" "^2.3.8"
 
 "@neo-one/node-http-rpc@^2.7.3":
   "integrity" "sha512-Pf0kcrJX79REr1F+Zn+bIdmEHE/0bHv9yhSCcMMoZEAwYNjdn+ob22F0+2leFFX6FnYpYoC5Stul6Fi3ee/QPg=="
@@ -1304,6 +1583,44 @@
     "lodash" "^4.17.15"
     "tslib" "^1.10.0"
 
+"@neo-one/node-http-rpc@3.5.4-rc3":
+  "integrity" "sha512-MnbwrlvC7bkFtDOFnh+wzv4FyHTDd+2ABdrtHLgBO3LeYwxO/BXcLKsFapePF6hA+dArZFsqaTv606wYMolzfQ=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node-http-rpc/-/node-http-rpc-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/cli-common-node" "3.5.4-rc3"
+    "@neo-one/http" "3.5.3-rc3"
+    "@neo-one/http-context" "3.5.4-rc3"
+    "@neo-one/logger" "2.8.0-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/node-native" "3.5.4-rc3"
+    "@neo-one/node-rpc-handler" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "@types/koa" "^2.0.49"
+    "@types/koa-compose" "^3.2.4"
+    "cross-fetch" "^3.0.4"
+    "execa" "^3.2.0"
+    "koa" "^2.7.0"
+    "koa-compose" "^4.1.0"
+    "koa-compress" "^3.0.0"
+    "koa-router" "^7.4.0"
+    "koa-static" "^5.0.0"
+    "lodash" "^4.17.15"
+    "tslib" "^1.10.0"
+
+"@neo-one/node-native@3.5.4-rc3":
+  "integrity" "sha512-RjIxwDnkmLOOAQnDM+aI2XoRtlkdgHekGRqwC9Eu0jGdZtDtx27l3uSF703w3VsTvFptNCcWdCwz2vTipjbPiw=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node-native/-/node-native-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/client-full-common" "3.5.4-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "bn.js" "^5.0.0"
+    "lodash" "^4.17.15"
+    "rxjs" "^6.5.3"
+
 "@neo-one/node-neo-settings@^2.7.3":
   "integrity" "sha512-YlitYxl1Bnd9fjkx2pzjM1ojHeHh9Ezx6h9xKpWyIMXRYI6Jg1xv+TKiR/0NwIzCq/rfXc71dsciS4qEnsWGow=="
   "resolved" "https://registry.npmjs.org/@neo-one/node-neo-settings/-/node-neo-settings-2.7.3.tgz"
@@ -1312,6 +1629,20 @@
     "@neo-one/client-common" "^2.7.3"
     "@neo-one/node-core" "^2.7.3"
     "@neo-one/utils" "^2.6.1"
+    "@types/bn.js" "^4.11.5"
+    "@types/lodash" "^4.14.138"
+    "bn.js" "^5.0.0"
+    "lodash" "^4.17.15"
+    "tslib" "^1.10.0"
+
+"@neo-one/node-neo-settings@3.5.4-rc3":
+  "integrity" "sha512-xmonG8RH82/e3NbWN4IdbWj4TUJYqXQWotKmaIw13YPUKIUnm84mM9jF8QDJG/Tf2sLCav48TsF8y8rq/KVdmw=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node-neo-settings/-/node-neo-settings-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
     "@types/bn.js" "^4.11.5"
     "@types/lodash" "^4.14.138"
     "bn.js" "^5.0.0"
@@ -1330,6 +1661,18 @@
     "lodash" "^4.17.15"
     "tslib" "^1.10.0"
 
+"@neo-one/node-network@3.5.4-rc3":
+  "integrity" "sha512-zT8kfoMSFq79jfjcDcHKaqtLp/8rDgwN4DvWDwrsj0TnRv2PHvlPEy47HdngLR6kwNZ2QIH9BCvH2QIotAH94Q=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node-network/-/node-network-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-switch" "3.5.4-rc3"
+    "@neo-one/logger" "2.8.0-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "lodash" "^4.17.15"
+    "tslib" "^1.10.0"
+
 "@neo-one/node-offline@^2.7.3":
   "integrity" "sha512-OzUP5yJoWGkIbpEdmGZ8Uafz8yOo3iGq/GQbeoASX6YSbgvsOV4ukSJY2gfFwakBJBngtq9TC88023D1ByRePg=="
   "resolved" "https://registry.npmjs.org/@neo-one/node-offline/-/node-offline-2.7.3.tgz"
@@ -1338,6 +1681,17 @@
     "@neo-one/logger" "^2.6.2"
     "@neo-one/node-core" "^2.7.3"
     "@neo-one/utils" "^2.6.1"
+    "lodash" "^4.17.15"
+    "tslib" "^1.10.0"
+
+"@neo-one/node-offline@3.5.4-rc3":
+  "integrity" "sha512-BysJ+Km//B9epBNuI9vpWleZKHKytjEFaZfv3y3vzpkJ0txaIA8x9etdqIC1iVOD0cnWG4jdVUdXaBJRhqzHVg=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node-offline/-/node-offline-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/logger" "2.8.0-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
     "lodash" "^4.17.15"
     "tslib" "^1.10.0"
 
@@ -1364,6 +1718,31 @@
     "lru-cache" "^5.0.0"
     "tslib" "^1.10.0"
 
+"@neo-one/node-protocol@3.5.4-rc3":
+  "integrity" "sha512-DD1G9tyaZ6OYQ46VoBgMEo+IcZxQ0o0AfxEBKtXVBp//hoaf0wkdGSEOE/QKosHbbkCrmCkYX6ksqcKP7ff4eQ=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node-protocol/-/node-protocol-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/client-switch" "3.5.4-rc3"
+    "@neo-one/logger" "2.8.0-rc3"
+    "@neo-one/node-consensus" "3.5.4-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "@types/bloom-filter" "^0.2.0"
+    "@types/bn.js" "^4.11.5"
+    "@types/ip-address" "^5.8.2"
+    "bloem" "^0.2.4"
+    "bloom-filter" "^0.2.0"
+    "bn.js" "^5.0.0"
+    "cross-fetch" "^3.0.4"
+    "immutable" "^4.0.0-rc.12"
+    "ip-address" "^6.0.0"
+    "lodash" "^4.17.15"
+    "lru-cache" "^5.0.0"
+    "lz4" "0.6.3"
+    "tslib" "^1.10.0"
+
 "@neo-one/node-rpc-handler@^2.7.3":
   "integrity" "sha512-ffoQy1CKPpICIb3QWbYnB8QfLlza06lN3CBImeHfrycjzh8aWkEMrPJcHki7TyAjLdq9FknMxGxUTnVM77a7cQ=="
   "resolved" "https://registry.npmjs.org/@neo-one/node-rpc-handler/-/node-rpc-handler-2.7.3.tgz"
@@ -1377,6 +1756,21 @@
     "rxjs" "^6.5.3"
     "tslib" "^1.10.0"
 
+"@neo-one/node-rpc-handler@3.5.4-rc3":
+  "integrity" "sha512-9n2y+Yc0/8RX1Ca94fK0aGxGvoqq+pkfxmMBFmKm2/LxxmWdjQPSTOmnfki6NLsmeTWePO2NwWGYQTSQj01Ypw=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node-rpc-handler/-/node-rpc-handler-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/client-switch" "3.5.4-rc3"
+    "@neo-one/logger" "2.8.0-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "@types/bn.js" "^4.11.5"
+    "bn.js" "^5.0.0"
+    "rxjs" "^6.5.3"
+    "tslib" "^1.10.0"
+
 "@neo-one/node-storage-common@^2.7.3":
   "integrity" "sha512-yeZdcSciKy5W//TUC0AYaYIzR5nbvEFaNksm3hqJadb1q9TaytPCdP6uMF3loNy9o8wRIoVynHYFgj8JCyucEQ=="
   "resolved" "https://registry.npmjs.org/@neo-one/node-storage-common/-/node-storage-common-2.7.3.tgz"
@@ -1385,6 +1779,17 @@
     "@neo-one/client-common" "^2.7.3"
     "@neo-one/node-core" "^2.7.3"
     "@neo-one/utils" "^2.6.1"
+    "tslib" "^1.10.0"
+
+"@neo-one/node-storage-common@3.5.4-rc3":
+  "integrity" "sha512-1irp00WfiPMk3fOoI4IovjJYRspuiVbTMoeH+WXWzeWczzkSySrHQXP+XyOo4pv80mWTsFeWK4+ftxVZd6nr1w=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node-storage-common/-/node-storage-common-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "bn.js" "^5.0.0"
     "tslib" "^1.10.0"
 
 "@neo-one/node-storage-levelup@^2.7.3":
@@ -1398,6 +1803,23 @@
     "@neo-one/utils" "^2.6.1"
     "@types/levelup" "^3.1.1"
     "levelup" "4.1.0"
+    "rxjs" "^6.5.3"
+    "tslib" "^1.10.0"
+
+"@neo-one/node-storage-levelup@3.5.4-rc3":
+  "integrity" "sha512-29QvB6x6oB2w4QL5lq01yB+407eJXK7B0lfZgB8E4H0HqkY4A79KcksxIT4lOJNMiZpX9QPKFxH+8wcgP5+dcw=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node-storage-levelup/-/node-storage-levelup-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/node-storage-common" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "@types/abstract-leveldown" "^5.0.1"
+    "@types/levelup" "^3.1.1"
+    "abstract-leveldown" "^6.0.3"
+    "levelup" "4.1.0"
+    "rocksdb" "^4.1.0"
     "rxjs" "^6.5.3"
     "tslib" "^1.10.0"
 
@@ -1418,6 +1840,17 @@
     "lodash" "^4.17.15"
     "rxjs" "^6.5.3"
     "tslib" "^1.10.0"
+
+"@neo-one/node-vm@3.5.4-rc3":
+  "integrity" "sha512-GdAQ1XIRO4fwSpVWtK88sJt3Qtai43nOyGfYWu+FbTKz9gN3Qcc3Tr+XbhD2T3UDeMyA8/oCIFO8KjlkY94BCg=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node-vm/-/node-vm-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/edge" "^15.0.0"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "bn.js" "^5.0.0"
 
 "@neo-one/node@^2.7.3":
   "integrity" "sha512-dXzH/nrzCqNzJimxx+RDpUZjY15fEv9YEI4m3zO9Io/921NOsQq5Fvd7bbPa5YCnQ4cuOq33YesEvhIW+oUhjQ=="
@@ -1442,6 +1875,32 @@
     "levelup" "4.1.0"
     "tslib" "^1.10.0"
 
+"@neo-one/node@3.5.4-rc3":
+  "integrity" "sha512-A1J4ETOBMgUYHIAaUnT9HDZsc1DLey1Q5Z5R7Vc9ZI0OinF9KZhMqlXplj4//OkjIVHEXKKsyxLVf9dAj+qSGg=="
+  "resolved" "https://registry.npmjs.org/@neo-one/node/-/node-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-switch" "3.5.4-rc3"
+    "@neo-one/logger" "2.8.0-rc3"
+    "@neo-one/node-blockchain" "3.5.4-rc3"
+    "@neo-one/node-core" "3.5.4-rc3"
+    "@neo-one/node-http-rpc" "3.5.4-rc3"
+    "@neo-one/node-native" "3.5.4-rc3"
+    "@neo-one/node-network" "3.5.4-rc3"
+    "@neo-one/node-offline" "3.5.4-rc3"
+    "@neo-one/node-protocol" "3.5.4-rc3"
+    "@neo-one/node-storage-levelup" "3.5.4-rc3"
+    "@neo-one/node-vm" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "@types/abstract-leveldown" "^5.0.1"
+    "abstract-leveldown" "^6.0.3"
+    "fs-extra" "^8.1.0"
+    "leveldown" "^5.1.1"
+    "levelup" "4.1.0"
+    "rocksdb" "^4.1.0"
+    "rxjs" "^6.5.3"
+    "tslib" "^1.10.0"
+
 "@neo-one/smart-contract-codegen@^2.7.3":
   "integrity" "sha512-NQBJWUCvF+9njWsA4jWwHPrNDIvh10toh1koSxhMKKKM13sm6KtSwT0idp9i4c5+uAOriNt9g9YvgGSgGzi6rA=="
   "resolved" "https://registry.npmjs.org/@neo-one/smart-contract-codegen/-/smart-contract-codegen-2.7.3.tgz"
@@ -1457,6 +1916,21 @@
     "source-map" "^0.7.3"
     "tslib" "^1.10.0"
 
+"@neo-one/smart-contract-codegen@3.5.4-rc3":
+  "integrity" "sha512-vliyDOsSQ7LFpUk6hlPIuCc/Wyg0MKXEzGTQrZfZksBkuVierK2icQG1u81IGj8j0MouhazCT6erXfO7EJZIdQ=="
+  "resolved" "https://registry.npmjs.org/@neo-one/smart-contract-codegen/-/smart-contract-codegen-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/cli-common" "3.5.4-rc3"
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/client-core" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "lodash" "^4.17.15"
+    "prettier" "^2.0.1"
+    "safe-stable-stringify" "^1.1.0"
+    "source-map" "^0.7.3"
+    "tslib" "^1.10.0"
+
 "@neo-one/smart-contract-compiler-node@^2.7.3":
   "integrity" "sha512-2/UpOpsI22FjXFb6Qv1oH61Jvl2O5XBjBEKTrRfVMtHDzU/eUPT8reeTibxxoRFuc/yHArrt0V+1xUU0r7mpZQ=="
   "resolved" "https://registry.npmjs.org/@neo-one/smart-contract-compiler-node/-/smart-contract-compiler-node-2.7.3.tgz"
@@ -1465,6 +1939,19 @@
     "@neo-one/smart-contract" "^2.7.3"
     "@neo-one/smart-contract-lib" "^2.7.3"
     "@neo-one/utils" "^2.6.1"
+    "app-root-dir" "^1.0.2"
+    "glob" "^7.1.4"
+    "tslib" "^1.10.0"
+    "typescript" "3.9.5"
+
+"@neo-one/smart-contract-compiler-node@3.5.4-rc3":
+  "integrity" "sha512-TQSn+hVHIf4BJ9YpQIYGidxtE5bG8AMKY0mKDeTLjadOlswXD7vbp+49zxTZJ39a2g+OUCOsFqP+J2g8dXFucg=="
+  "resolved" "https://registry.npmjs.org/@neo-one/smart-contract-compiler-node/-/smart-contract-compiler-node-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/smart-contract" "3.5.3-rc3"
+    "@neo-one/smart-contract-lib" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
     "app-root-dir" "^1.0.2"
     "glob" "^7.1.4"
     "tslib" "^1.10.0"
@@ -1492,12 +1979,41 @@
     "tslib" "^1.10.0"
     "typescript" "3.9.5"
 
+"@neo-one/smart-contract-compiler@3.5.4-rc3":
+  "integrity" "sha512-cBseBF0TRms9eUKLhmaY9JLrdeEhwLfTm/YG/JdY7CciOpAuDFepjtBJQYKnFWH5p60xuRBH1o+FwFqbTQIPOw=="
+  "resolved" "https://registry.npmjs.org/@neo-one/smart-contract-compiler/-/smart-contract-compiler-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/client-core" "3.5.4-rc3"
+    "@neo-one/client-full-common" "3.5.4-rc3"
+    "@neo-one/client-full-core" "3.5.4-rc3"
+    "@neo-one/smart-contract" "3.5.3-rc3"
+    "@neo-one/ts-utils" "2.8.0-rc3"
+    "@neo-one/typescript-concatenator" "2.8.0-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "@types/bn.js" "^4.11.5"
+    "bn.js" "^5.0.0"
+    "lodash" "^4.17.15"
+    "safe-stable-stringify" "^1.1.0"
+    "source-map" "^0.7.3"
+    "tslib" "^1.10.0"
+    "typescript" "3.9.5"
+
 "@neo-one/smart-contract-lib@^2.7.3":
   "integrity" "sha512-g4dtA9r2PLnbRQRzqVcPLMj5zlFUX37HpR/Uh95qo2Lj88glpBKLUAzmMbm2V23ygwVd1MsSDVWih8zAp66B5g=="
   "resolved" "https://registry.npmjs.org/@neo-one/smart-contract-lib/-/smart-contract-lib-2.7.3.tgz"
   "version" "2.7.3"
   dependencies:
     "@neo-one/smart-contract" "^2.7.3"
+
+"@neo-one/smart-contract-lib@^3.5.4-rc3", "@neo-one/smart-contract-lib@3.5.4-rc3":
+  "integrity" "sha512-W94FjXLtO7pyc+9r7EhGsrkuySxvdE0O9SfCP0CUGMgE5PHJSmE5KeaRbL5+u6r5DfuDy/hRcHnrj26Rv5c5cA=="
+  "resolved" "https://registry.npmjs.org/@neo-one/smart-contract-lib/-/smart-contract-lib-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/smart-contract" "3.5.3-rc3"
 
 "@neo-one/smart-contract-test-common@^2.7.3":
   "integrity" "sha512-ktmYjswnb3PeeKhxKdem5uoqSnR9rfaDfN/HiYZWs7W5FBaNRKTVNrwGcHoQ2qI/665qMRukiQ/1OUeXfQJoFA=="
@@ -1511,6 +2027,21 @@
     "@neo-one/logger" "^2.6.2"
     "@neo-one/smart-contract-compiler" "^2.7.3"
     "@neo-one/utils" "^2.6.1"
+    "bignumber.js" "^9.0.0"
+    "tslib" "^1.10.0"
+
+"@neo-one/smart-contract-test-common@3.5.4-rc3":
+  "integrity" "sha512-9hME/1sluLgDraMMPOLVpF0bZnPB80leujCU27FwiJvfgF7b8f2bFx1eOwL4NfZo1s+id3BFibh2Xms1krVn2g=="
+  "resolved" "https://registry.npmjs.org/@neo-one/smart-contract-test-common/-/smart-contract-test-common-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/cli-common" "3.5.4-rc3"
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/client-core" "3.5.4-rc3"
+    "@neo-one/client-full-core" "3.5.4-rc3"
+    "@neo-one/logger" "2.8.0-rc3"
+    "@neo-one/smart-contract-compiler" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
     "bignumber.js" "^9.0.0"
     "tslib" "^1.10.0"
 
@@ -1530,6 +2061,22 @@
     "memdown" "^5.0.0"
     "tslib" "^1.10.0"
 
+"@neo-one/smart-contract-test@^3.5.4-rc3":
+  "integrity" "sha512-P7AjPPIrQlRRu/D/Muy8E3NdlwhGg9+zflhRVGUzVRogfDlgBIbk/bR808Hz1U0jpsqZp1YLPkFowf99nhlVkA=="
+  "resolved" "https://registry.npmjs.org/@neo-one/smart-contract-test/-/smart-contract-test-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/client-common" "3.5.4-rc3"
+    "@neo-one/client-core" "3.5.4-rc3"
+    "@neo-one/node" "3.5.4-rc3"
+    "@neo-one/node-neo-settings" "3.5.4-rc3"
+    "@neo-one/smart-contract-compiler-node" "3.5.4-rc3"
+    "@neo-one/smart-contract-test-common" "3.5.4-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "lodash" "^4.17.15"
+    "memdown" "^5.0.0"
+    "tslib" "^1.10.0"
+
 "@neo-one/smart-contract-typescript-plugin@^2.7.3":
   "integrity" "sha512-Jir4ZU7Am9OCIuERTV+MUDfhbmyVFBvapDSqXtIsl70zDyVBkQON4LZbyMnm9r82zkWXHgHKcOkYFPIzQPfjAw=="
   "resolved" "https://registry.npmjs.org/@neo-one/smart-contract-typescript-plugin/-/smart-contract-typescript-plugin-2.7.3.tgz"
@@ -1539,10 +2086,24 @@
     "@neo-one/smart-contract-compiler-node" "^2.7.3"
     "typescript" "3.9.5"
 
+"@neo-one/smart-contract-typescript-plugin@^3.5.4-rc3":
+  "integrity" "sha512-48JQdr/b1ZzATSmJ8BXmEIGtXJe3SUX4iWt2bVRl+ysBgNJyvOZ6c0S2svLp2JntpFN0Dkr4WvxZnp2uLI7xiQ=="
+  "resolved" "https://registry.npmjs.org/@neo-one/smart-contract-typescript-plugin/-/smart-contract-typescript-plugin-3.5.4-rc3.tgz"
+  "version" "3.5.4-rc3"
+  dependencies:
+    "@neo-one/smart-contract-compiler" "3.5.4-rc3"
+    "@neo-one/smart-contract-compiler-node" "3.5.4-rc3"
+    "typescript" "3.9.5"
+
 "@neo-one/smart-contract@^2.7.3":
   "integrity" "sha512-SnC+7BB/L8GfVkUA1FzhplRl3FSLVctTyVFG0jiMWGwno18J7QTSP3znF1KIPXjpxP9cyMpzs/c1VoEhRd4xuA=="
   "resolved" "https://registry.npmjs.org/@neo-one/smart-contract/-/smart-contract-2.7.3.tgz"
   "version" "2.7.3"
+
+"@neo-one/smart-contract@^3.5.3-rc3", "@neo-one/smart-contract@3.5.3-rc3":
+  "integrity" "sha512-sVWwrYutzfmkrmPPBlqeNNuLxJYaVnRsbiuSlZv+4Oi7c5+CjyKMQfHsjKplisBzs8gugxpvocECp8J+jel/ZQ=="
+  "resolved" "https://registry.npmjs.org/@neo-one/smart-contract/-/smart-contract-3.5.3-rc3.tgz"
+  "version" "3.5.3-rc3"
 
 "@neo-one/suite@^2.7.2":
   "integrity" "sha512-o88e749/VQtutdnnKuWOQhVipE2Oh2YBTJxxSyw06lpyvvOYR3Gfz4e9KgJ0oJEu4sKBVHJvJvL8wAPRa63IQw=="
@@ -1566,6 +2127,16 @@
     "tslib" "^1.10.0"
     "typescript" "3.9.5"
 
+"@neo-one/ts-utils@2.8.0-rc3":
+  "integrity" "sha512-bB6Rt8of4rIWRN7jWqls+QMQo//U/rU4JU+R95cfbVLYV/AScccMtm8NfG5ZrkHZnXq3/OJ2UJwW97vmHLGpzA=="
+  "resolved" "https://registry.npmjs.org/@neo-one/ts-utils/-/ts-utils-2.8.0-rc3.tgz"
+  "version" "2.8.0-rc3"
+  dependencies:
+    "lodash" "^4.17.15"
+    "source-map" "^0.7.3"
+    "tslib" "^1.10.0"
+    "typescript" "3.9.5"
+
 "@neo-one/typescript-concatenator@^2.6.2":
   "integrity" "sha512-UoXeShontXkns3WcLT5aAQXAZ9emWvlC7c+1tDnHOuB9yU66PLW2IOrSGP0AWUx2czz7BsI8reh5JOSI0fkzQg=="
   "resolved" "https://registry.npmjs.org/@neo-one/typescript-concatenator/-/typescript-concatenator-2.6.2.tgz"
@@ -1578,12 +2149,38 @@
     "tslib" "^1.10.0"
     "typescript" "3.9.5"
 
+"@neo-one/typescript-concatenator@2.8.0-rc3":
+  "integrity" "sha512-9ZqLBmJWU8ew7DtHbEEvFSFU9+MApySjiuKuwz8E6TtVseowbpYaq2TMFJMUcZFnaip7Gz92Yimp4tD1ekAX7g=="
+  "resolved" "https://registry.npmjs.org/@neo-one/typescript-concatenator/-/typescript-concatenator-2.8.0-rc3.tgz"
+  "version" "2.8.0-rc3"
+  dependencies:
+    "@neo-one/ts-utils" "2.8.0-rc3"
+    "@neo-one/utils" "3.3.0-rc3"
+    "lodash" "^4.17.15"
+    "toposort" "^2.0.2"
+    "tslib" "^1.10.0"
+    "typescript" "3.9.5"
+
 "@neo-one/utils-node@^2.6.1":
   "integrity" "sha512-uaTvSPadk4V5TI1rHaIneksEDB2JRxOtZlEyDSRLVQiA9E5Lmr8jZtNJoOoyugx4oTc87YK0dSP4WLff4CCq6g=="
   "resolved" "https://registry.npmjs.org/@neo-one/utils-node/-/utils-node-2.6.1.tgz"
   "version" "2.6.1"
   dependencies:
     "@neo-one/utils" "^2.6.1"
+    "@types/pino" "^5.8.9"
+    "@types/yargs" "^13.0.3"
+    "execa" "^3.2.0"
+    "npm-package-arg" "^7.0.0"
+    "pino" "^5.12.6"
+    "tslib" "^1.10.0"
+    "yargs" "^14.2.0"
+
+"@neo-one/utils-node@2.8.0-rc3":
+  "integrity" "sha512-sJtWSbdfMAYCMwG286YXYK/MLLFx31qusbovmtIRrjxaVc2Pu5TpCvCoaVOQiAbuY9er5iPCj7fy5cFxQJ3m3w=="
+  "resolved" "https://registry.npmjs.org/@neo-one/utils-node/-/utils-node-2.8.0-rc3.tgz"
+  "version" "2.8.0-rc3"
+  dependencies:
+    "@neo-one/utils" "3.3.0-rc3"
     "@types/pino" "^5.8.9"
     "@types/yargs" "^13.0.3"
     "execa" "^3.2.0"
@@ -1606,6 +2203,16 @@
   "integrity" "sha512-7N0NpSPUxPuCxjleCUUumo0/XSDN7p8Ws/peFabOEH/RZ8HvxBXvkjc6jwopsfCkURkaKo21HvH2JaPIVp2N/g=="
   "resolved" "https://registry.npmjs.org/@neo-one/utils/-/utils-3.0.1-preview3.1.1.tgz"
   "version" "3.0.1-preview3.1.1"
+  dependencies:
+    "@types/node" "^12.7.7"
+    "lodash" "^4.17.15"
+    "rxjs" "^6.5.3"
+    "tslib" "^1.10.0"
+
+"@neo-one/utils@3.3.0-rc3":
+  "integrity" "sha512-0s+4jle+KlWqoiQiT9vYvke6AO6lUfpD89UqDqFyPSsiRCqpBIkjy6/KlVPXEHS2dNdXEoFiHKPwUD2hS6Wl9A=="
+  "resolved" "https://registry.npmjs.org/@neo-one/utils/-/utils-3.3.0-rc3.tgz"
+  "version" "3.3.0-rc3"
   dependencies:
     "@types/node" "^12.7.7"
     "lodash" "^4.17.15"
@@ -2650,14 +3257,14 @@
     "@types/node" "*"
 
 "@types/yargs-parser@*":
-  "integrity" "sha512-37RSHht+gzzgYeobbG+KWryeAW8J33Nhr69cjTqSYymXVZEN9NbRYWoYlRtDhHKPVT1FyNKwaTPC1NynKZpzRA=="
-  "resolved" "https://registry.npmjs.org/@types/yargs-parser/-/yargs-parser-20.2.0.tgz"
-  "version" "20.2.0"
+  "integrity" "sha512-7tFImggNeNBVMsn0vLrpn1H1uPrUBdnARPTpZoitY37ZrdJREzf7I16tMrlK3hen349gr1NYh8CmZQa7CTG6Aw=="
+  "resolved" "https://registry.npmjs.org/@types/yargs-parser/-/yargs-parser-20.2.1.tgz"
+  "version" "20.2.1"
 
 "@types/yargs@^13.0.3":
-  "integrity" "sha512-NRqD6T4gktUrDi1o1wLH3EKC1o2caCr7/wR87ODcbVITQF106OM3sFN92ysZ++wqelOd1CTzatnOBRDYYG6wGQ=="
-  "resolved" "https://registry.npmjs.org/@types/yargs/-/yargs-13.0.11.tgz"
-  "version" "13.0.11"
+  "integrity" "sha512-qCxJE1qgz2y0hA4pIxjBR+PelCH0U5CK1XJXFwCNqfmliatKp47UCXXE9Dyk1OXBDLvsCF57TqQEJaeLfDYEOQ=="
+  "resolved" "https://registry.npmjs.org/@types/yargs/-/yargs-13.0.12.tgz"
+  "version" "13.0.12"
   dependencies:
     "@types/yargs-parser" "*"
 
@@ -2932,6 +3539,14 @@
   "integrity" "sha512-jzewKKpZbaYUa6HTThnrl+GrJhzjEAeuc7hTVpZdzg7kupXZFoqQDFwyOwLNbmJKJlmzw8yiipMPkDiuKkT06Q=="
   "resolved" "https://registry.npmjs.org/abstract-leveldown/-/abstract-leveldown-6.0.3.tgz"
   "version" "6.0.3"
+  dependencies:
+    "level-concat-iterator" "~2.0.0"
+    "xtend" "~4.0.0"
+
+"abstract-leveldown@~6.1.1":
+  "integrity" "sha512-7fK/KySVqzKIomdhkSWzX4YBQhzkzEMbWSiaB6mSN9e+ZdV3KEeKxia/8xQzCkATA5xnnukdP88cFR0D2FsFXw=="
+  "resolved" "https://registry.npmjs.org/abstract-leveldown/-/abstract-leveldown-6.1.1.tgz"
+  "version" "6.1.1"
   dependencies:
     "level-concat-iterator" "~2.0.0"
     "xtend" "~4.0.0"
@@ -3656,7 +4271,7 @@
     "ieee754" "^1.1.4"
     "isarray" "^1.0.0"
 
-"buffer@^5.1.0", "buffer@^5.5.0":
+"buffer@^5.1.0", "buffer@^5.2.1", "buffer@^5.5.0":
   "integrity" "sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ=="
   "resolved" "https://registry.npmjs.org/buffer/-/buffer-5.7.1.tgz"
   "version" "5.7.1"
@@ -5190,6 +5805,11 @@
     "minimist" "^1.1.0"
     "url-join" "^2.0.5"
 
+"edge-cs@1.2.1":
+  "integrity" "sha1-vRqezblO8O1AyJRYIEZ0nlcEXlo="
+  "resolved" "https://registry.npmjs.org/edge-cs/-/edge-cs-1.2.1.tgz"
+  "version" "1.2.1"
+
 "ee-first@1.1.1":
   "integrity" "sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0="
   "resolved" "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz"
@@ -6520,6 +7140,11 @@
   "resolved" "https://registry.npmjs.org/immediate/-/immediate-3.2.3.tgz"
   "version" "3.2.3"
 
+"immutable@^4.0.0-rc.12":
+  "integrity" "sha512-0M2XxkZLx/mi3t8NVwIm1g8nHoEmM9p9UBl/G9k4+hm0kBgOVdMV/B3CY5dQ8qG8qc80NN4gDV4HQv6FTJ5q7A=="
+  "resolved" "https://registry.npmjs.org/immutable/-/immutable-4.0.0-rc.12.tgz"
+  "version" "4.0.0-rc.12"
+
 "import-cwd@^2.0.0":
   "integrity" "sha1-qmzzbnInYShcs3HsZRn1PiQ1sKk="
   "resolved" "https://registry.npmjs.org/import-cwd/-/import-cwd-2.1.0.tgz"
@@ -7795,6 +8420,16 @@
   "resolved" "https://registry.npmjs.org/ltgt/-/ltgt-2.2.1.tgz"
   "version" "2.2.1"
 
+"lz4@0.6.3":
+  "integrity" "sha512-NEs7p58fnU69P6mGl1slL5I+FVhYIUXXfZRXNBIFvmTkEsHh+TMpO1BPcQREwFpThHNC5wa61d7vQdZ0zz9aUg=="
+  "resolved" "https://registry.npmjs.org/lz4/-/lz4-0.6.3.tgz"
+  "version" "0.6.3"
+  dependencies:
+    "buffer" "^5.2.1"
+    "cuint" "^0.2.2"
+    "nan" "^2.13.2"
+    "xxhashjs" "^0.2.2"
+
 "make-dir@^1.0.0":
   "integrity" "sha512-2w31R7SJtieJJnQtGc7RVL2StM2vGYVfqUOvUDxH6bC6aJTxPxTF0GnIgCyu7tjockiUWAYQRbxa7vKn34s5sQ=="
   "resolved" "https://registry.npmjs.org/make-dir/-/make-dir-1.3.0.tgz"
@@ -8379,6 +9014,11 @@
   "integrity" "sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA=="
   "resolved" "https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.8.tgz"
   "version" "0.0.8"
+
+"nan@^2.13.2", "nan@^2.14.0":
+  "integrity" "sha512-M2ufzIiINKCuDfBSAUr1vWQ+vuVcA9kqx8JJUsbQi6yf1uGRyb7HfpdfUr5qLXf3B/t8dPvcjhKMmlfnP47EzQ=="
+  "resolved" "https://registry.npmjs.org/nan/-/nan-2.14.2.tgz"
+  "version" "2.14.2"
 
 "nanoid@^3.1.23":
   "integrity" "sha512-FiB0kzdP0FFVGDKlRLEQ1BgDzU87dy5NnzjeW9YZNt+/c3+q82EQDUwniSAUxp/F0gFNI1ZhKU1FqYsMuqZVnw=="
@@ -10763,6 +11403,15 @@
     "hash-base" "^3.0.0"
     "inherits" "^2.0.1"
 
+"rocksdb@^4.1.0":
+  "integrity" "sha512-NtjezNMuxk9NsC1kGybZ8Y9eWKqAohug88xbtxCwb5n7MhDDgtKJuL7VYUk8s8Q9U4Mzolt026k3hD8eHtoUvQ=="
+  "resolved" "https://registry.npmjs.org/rocksdb/-/rocksdb-4.1.0.tgz"
+  "version" "4.1.0"
+  dependencies:
+    "abstract-leveldown" "~6.1.1"
+    "napi-macros" "~2.0.0"
+    "node-gyp-build" "~4.1.0"
+
 "run-async@^2.4.0":
   "integrity" "sha512-tvVnVv01b8c1RrA6Ep7JkStj85Guv/YrMcwqYQnwjsAS2cTmmPGBBjAjpCW7RrSodNSoE2/qg9O4bceNvUuDgQ=="
   "resolved" "https://registry.npmjs.org/run-async/-/run-async-2.4.1.tgz"
@@ -12757,7 +13406,7 @@
   "resolved" "https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz"
   "version" "4.0.2"
 
-"xxhashjs@^0.2.1", "xxhashjs@~0.2.2":
+"xxhashjs@^0.2.1", "xxhashjs@^0.2.2", "xxhashjs@~0.2.2":
   "integrity" "sha512-AkTuIuVTET12tpsVIQo+ZU6f/qDmKuRUcjaqR+OIvm+aCBsZ95i7UVY5WJ9TMsSaZ0DA2WxoZ4acu0sPH+OKAw=="
   "resolved" "https://registry.npmjs.org/xxhashjs/-/xxhashjs-0.2.2.tgz"
   "version" "0.2.2"

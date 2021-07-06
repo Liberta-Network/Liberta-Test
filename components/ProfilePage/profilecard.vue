@@ -9,6 +9,7 @@
       sm:mx-smprofilecard
       grid grid-cols-1
       md:grid-cols-2
+      rounded
     "
   >
     <div class="col-span-1">
@@ -49,55 +50,64 @@
     </div>
 
     <div class="col-span-1">
-      <div class="grid grid-cols-3 md:ml-26">
+      <div class="grid grid-rows-2 grid-flow-col">
         <div>
-          <p class="text-center leading-6 font-medium text-gray-700">
-            Followers
-          </p>
-          <p
-            class="
-              text-sm
-              leading-5
-              font-medium
-              text-gray-400
-              group-hover:text-gray-300
-              text-center
-            "
-          >
-            10
-          </p>
+          <div class="grid grid-cols-3 md:ml-26">
+            <div>
+              <p class="text-center leading-6 font-medium text-gray-700">
+                Followers
+              </p>
+              <p
+                class="
+                  text-sm
+                  leading-5
+                  font-medium
+                  text-gray-400
+                  group-hover:text-gray-300
+                  text-center
+                "
+              >
+                10
+              </p>
+            </div>
+            <div class="">
+              <p class="text-center leading-6 font-medium text-gray-700">
+                Following
+              </p>
+              <p
+                class="
+                  text-sm
+                  leading-5
+                  font-medium
+                  text-gray-400
+                  group-hover:text-gray-300
+                  text-center
+                "
+              >
+                10
+              </p>
+            </div>
+            <div class="">
+              <p class="text-center leading-6 font-medium text-gray-700">
+                Posts
+              </p>
+              <p
+                class="
+                  text-sm
+                  leading-5
+                  font-medium
+                  text-gray-400
+                  group-hover:text-gray-300
+                  text-center
+                "
+              >
+                10
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="">
-          <p class="text-center leading-6 font-medium text-gray-700">
-            Following
-          </p>
-          <p
-            class="
-              text-sm
-              leading-5
-              font-medium
-              text-gray-400
-              group-hover:text-gray-300
-              text-center
-            "
-          >
-            10
-          </p>
-        </div>
-        <div class="">
-          <p class="text-center leading-6 font-medium text-gray-700">Posts</p>
-          <p
-            class="
-              text-sm
-              leading-5
-              font-medium
-              text-gray-400
-              group-hover:text-gray-300
-              text-center
-            "
-          >
-            10
-          </p>
+        <div class="mx-auto my-auto">
+          <liberta-button text="Check all reports" />
         </div>
       </div>
     </div>
@@ -105,11 +115,19 @@
 </template>
 
 <script>
-export default {};
+import LibertaButton from "../libertabutton.vue";
+
+export default {
+  components: { LibertaButton },
+};
 </script>
 
 <style>
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded {
+  border-radius: 1rem;
 }
 </style>

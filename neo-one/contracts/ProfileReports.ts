@@ -1,4 +1,4 @@
-import { Address, MapStorage, SmartContract, constant, Blockchain, Hash256 } from "@neo-one/smart-contract";
+import { Address, MapStorage, SmartContract, constant, Blockchain } from "@neo-one/smart-contract";
 
 type ProfileReport = {
   id: number;

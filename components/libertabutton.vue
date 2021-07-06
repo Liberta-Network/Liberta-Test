@@ -11,6 +11,8 @@
       rounded
       hover:bg-searchbarBG
       mr-2
+      text-libertia
+      cursor-pointer
     "
   >
    {{text}}
