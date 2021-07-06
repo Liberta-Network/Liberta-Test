@@ -92,10 +92,10 @@
         v-if="!isHidden"
       >
         <div class="text-md font-bold text-libertia lg:flex-grow">
-          <libertabutton click="/homepage" text="Home"></libertabutton>
-          <libertabutton click="/explore" text="Explore"></libertabutton>
-          <libertabutton click="/messages" text="Messages"></libertabutton>
-          <libertabutton click="/profile" text="Profile"></libertabutton>
+          <libertabutton click="/" text="Home"></libertabutton>
+          <libertabutton click="/Explore" text="Explore"></libertabutton>
+          <libertabutton click="/Messages" text="Messages"></libertabutton>
+          <libertabutton click="/Profile" text="Profile"></libertabutton>
         </div>
 
         <div class="flex">

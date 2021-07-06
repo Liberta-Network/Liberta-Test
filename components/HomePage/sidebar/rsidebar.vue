@@ -154,6 +154,9 @@
             </client-only>
             <span class="mx-4 font-medium">DOGE</span>
           </a>
+          <div class="text-center">
+            <Libertabutton text="See More" click="/TopCommunities" />
+          </div>
         </nav>
       </SidebarSection>
 
@@ -187,9 +190,10 @@
 
 <script>
 import SidebarSection from "./sidebar-section.vue";
+import LibertaButton from "../../libertabutton.vue";
 
 export default {
-  components: { SidebarSection },
+  components: { SidebarSection, LibertaButton },
   data() {
     return {
       modalShow: false,

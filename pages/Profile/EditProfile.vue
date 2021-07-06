@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Editprofilearea from "../components/EditProfile/editprofilearea.vue";
+import Editprofilearea from "../../components/EditProfile/editprofilearea.vue";
 export default {
   components: { Editprofilearea },
 };

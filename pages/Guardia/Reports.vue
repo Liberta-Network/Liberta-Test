@@ -35,8 +35,8 @@
 </template>
 
 <script>
-import reportsidebar from "../components/ReportPage/reportsidebar.vue";
-import Reportuser from "../components/ReportPage/reportuser.vue";
+import reportsidebar from "../../components/ReportPage/reportsidebar.vue";
+import Reportuser from "../../components/ReportPage/reportuser.vue";
 
 export default {
   components: { reportsidebar, Reportuser },
