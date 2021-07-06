@@ -1,6 +1,7 @@
 <template>
   <div class="h-auto flex">
     <!-- Start of component -->
+
     <div
       class="w-full bg-white border p-6 tracking-wide mt-5 mx-3 cursor-pointer"
       v-bind:class="{
@@ -8,6 +9,7 @@
         'rounded-t': radiusJustTop,
         shadow: hover,
       }"
+      @click="redirectToPost"
       @mouseover="hover = true"
       @mouseleave="hover = false"
     >
@@ -66,6 +68,15 @@ export default {
     return {
       hover: false,
     };
+  },
+  methods: {
+    redirectToPost() {
+      console.log(this.post);
+      if (this.post == undefined) return;
+      const { id } = this.post;
+      const route = `/Post/${id}`;
+      this.$router.push(route);
+    },
   },
 };
 </script>

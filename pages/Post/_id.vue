@@ -12,7 +12,7 @@
             <repliedpost></repliedpost>
           </div>
           <div class="h-screen col-span-1">
-            <rsidebar></rsidebar>
+            <rsidebar> </rsidebar>
           </div>
         </div>
       </div>
@@ -21,10 +21,10 @@
 </template>
 
 <script>
-import Rsidebar from "../components/HomePage/sidebar/rsidebar.vue";
-import Post from "../components/post.vue";
-import repliedpost from "../components/Post/repliedpost.vue";
-import Replypost from "../components/Post/replypost.vue";
+import Rsidebar from "../../components/HomePage/sidebar/rsidebar.vue";
+import Post from "../../components/post.vue";
+import repliedpost from "../../components/Post/repliedpost.vue";
+import Replypost from "../../components/Post/replypost.vue";
 
 const dummyData = {
   id: 0,
@@ -42,6 +42,10 @@ export default {
     };
   },
   components: { repliedpost, Post, Rsidebar, Replypost },
+  async asyncData({ params }) {
+    const id = params.id; // When calling /abc the slug will be "abc"
+    return { id };
+  },
 };
 </script>
 
