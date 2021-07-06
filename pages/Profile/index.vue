@@ -9,6 +9,9 @@
           <Post v-for="post of posts" :post="post" :key="post.id" />
         </div>
         <div class="h-screen col-span-1">
+          <div class="mx-auto text-center mt-4">
+            <LibertaButton text="Edit Profile" click="/Profile/EditProfile" />
+          </div>
           <rsidebar />
         </div>
       </div>
@@ -37,16 +40,18 @@ const dummyData = [
   },
 ];
 
-import rsidebar from "../components/HomePage/sidebar/rsidebar.vue";
-import Post from "../components/post.vue";
-import Profilecard from "../components/ProfilePage/profilecard.vue";
+import rsidebar from "../../components/HomePage/sidebar/rsidebar.vue";
+import Post from "../../components/post.vue";
+import Profilecard from "../../components/ProfilePage/profilecard.vue";
+import LibertaButton from "../../components/libertabutton.vue";
+
 export default {
   data() {
     return {
       posts: dummyData,
     };
   },
-  components: { rsidebar, Post, Profilecard },
+  components: { rsidebar, Post, Profilecard, LibertaButton },
 };
 </script>
 
