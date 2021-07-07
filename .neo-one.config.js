@@ -8,8 +8,6 @@ module.exports = {
     path: 'neo-one/contracts',
     // Set this to true if you want the compile command to output JSON.
     json: true,
-    // Set this to true if you want the compile command to output AVM.
-    avm: false,
     // Set this to true if you want the compile command to output additional debug information.
     debug: false,
     // Set this to true if you want the compile command to output the AVM in a human-readable format for debugging (requires debug: true).
