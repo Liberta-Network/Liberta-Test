@@ -125,7 +125,7 @@
   </div>
 </template>
 <script>
-import libertabutton from '../libertabutton.vue';
+import libertabutton from "../libertabutton.vue";
 export default {
   components: { libertabutton },
   data: function () {
@@ -150,8 +150,9 @@ export default {
           this.walletAddress = account.address;
           loader.hide();
         })
-        .catch(() => {
+        .catch((err) => {
           loader.hide();
+          console.error(err);
         });
     });
   },
