@@ -17,7 +17,7 @@
           hover:border-gray-700
           px-6
         "
-        href="#"
+        href="/ReportedProfiles/allreports"
       >
         <client-only>
           <eva-icon name="alert-circle"></eva-icon>
@@ -37,7 +37,7 @@
           hover:border-gray-700
           px-6
         "
-        href="#"
+        href="/ReportedPosts/allreports"
       >
         <client-only>
           <eva-icon name="archive"></eva-icon>
