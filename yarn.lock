@@ -1353,7 +1353,7 @@
   optionalDependencies:
     "@ledgerhq/hw-transport-node-hid" "^4.68.2"
 
-"@neo-one/client@3.5.4-rc3":
+"@neo-one/client@3.5.4-rc3", "@neo-one/client@^3.5.4-rc3":
   version "3.5.4-rc3"
   resolved "https://registry.npmjs.org/@neo-one/client/-/client-3.5.4-rc3.tgz"
   integrity sha512-cpepqbgxtJcd6y6q2EaaH0avOd2TGn9FBlwPggfXG0mSxdOzYPiO5ULPNA6nk9lIPkT3T0NMfu+LTiRdZLCi1w==
@@ -1370,15 +1370,6 @@
     "@neo-one/client-common" "^2.7.3"
     "@neo-one/client-core" "^2.7.3"
     "@neo-one/developer-tools" "^2.7.3"
-
-"@neo-one/client@^3.5.4-rc3":
-  version "3.5.4-rc3"
-  resolved "https://registry.yarnpkg.com/@neo-one/client/-/client-3.5.4-rc3.tgz#5c5b9a84fad7496794add19f69102ee1a92fb4c8"
-  integrity sha512-cpepqbgxtJcd6y6q2EaaH0avOd2TGn9FBlwPggfXG0mSxdOzYPiO5ULPNA6nk9lIPkT3T0NMfu+LTiRdZLCi1w==
-  dependencies:
-    "@neo-one/client-common" "3.5.4-rc3"
-    "@neo-one/client-core" "3.5.4-rc3"
-    "@neo-one/developer-tools" "3.5.4-rc3"
 
 "@neo-one/developer-tools@3.5.4-rc3":
   version "3.5.4-rc3"
@@ -2035,7 +2026,7 @@
     tslib "^1.10.0"
     typescript "3.9.5"
 
-"@neo-one/smart-contract-lib@3.5.4-rc3":
+"@neo-one/smart-contract-lib@3.5.4-rc3", "@neo-one/smart-contract-lib@^3.5.4-rc3":
   version "3.5.4-rc3"
   resolved "https://registry.npmjs.org/@neo-one/smart-contract-lib/-/smart-contract-lib-3.5.4-rc3.tgz"
   integrity sha512-W94FjXLtO7pyc+9r7EhGsrkuySxvdE0O9SfCP0CUGMgE5PHJSmE5KeaRbL5+u6r5DfuDy/hRcHnrj26Rv5c5cA==
@@ -2048,13 +2039,6 @@
   integrity sha512-g4dtA9r2PLnbRQRzqVcPLMj5zlFUX37HpR/Uh95qo2Lj88glpBKLUAzmMbm2V23ygwVd1MsSDVWih8zAp66B5g==
   dependencies:
     "@neo-one/smart-contract" "^2.7.3"
-
-"@neo-one/smart-contract-lib@^3.5.4-rc3":
-  version "3.5.4-rc3"
-  resolved "https://registry.yarnpkg.com/@neo-one/smart-contract-lib/-/smart-contract-lib-3.5.4-rc3.tgz#fd0aef0802f03a3586259955b098518502f8e638"
-  integrity sha512-W94FjXLtO7pyc+9r7EhGsrkuySxvdE0O9SfCP0CUGMgE5PHJSmE5KeaRbL5+u6r5DfuDy/hRcHnrj26Rv5c5cA==
-  dependencies:
-    "@neo-one/smart-contract" "3.5.3-rc3"
 
 "@neo-one/smart-contract-test-common@3.5.4-rc3":
   version "3.5.4-rc3"
@@ -2136,7 +2120,7 @@
     "@neo-one/smart-contract-compiler-node" "3.5.4-rc3"
     typescript "3.9.5"
 
-"@neo-one/smart-contract@3.5.3-rc3":
+"@neo-one/smart-contract@3.5.3-rc3", "@neo-one/smart-contract@^3.5.3-rc3":
   version "3.5.3-rc3"
   resolved "https://registry.npmjs.org/@neo-one/smart-contract/-/smart-contract-3.5.3-rc3.tgz"
   integrity sha512-sVWwrYutzfmkrmPPBlqeNNuLxJYaVnRsbiuSlZv+4Oi7c5+CjyKMQfHsjKplisBzs8gugxpvocECp8J+jel/ZQ==
@@ -2145,11 +2129,6 @@
   version "2.7.3"
   resolved "https://registry.npmjs.org/@neo-one/smart-contract/-/smart-contract-2.7.3.tgz"
   integrity sha512-SnC+7BB/L8GfVkUA1FzhplRl3FSLVctTyVFG0jiMWGwno18J7QTSP3znF1KIPXjpxP9cyMpzs/c1VoEhRd4xuA==
-
-"@neo-one/smart-contract@^3.5.3-rc3":
-  version "3.5.3-rc3"
-  resolved "https://registry.yarnpkg.com/@neo-one/smart-contract/-/smart-contract-3.5.3-rc3.tgz#3e18948a16be85aa7936ca02cabc8de9becd5b79"
-  integrity sha512-sVWwrYutzfmkrmPPBlqeNNuLxJYaVnRsbiuSlZv+4Oi7c5+CjyKMQfHsjKplisBzs8gugxpvocECp8J+jel/ZQ==
 
 "@neo-one/suite@^2.7.2":
   version "2.7.2"
