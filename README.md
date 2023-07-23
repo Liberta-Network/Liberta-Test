@@ -1,4 +1,9 @@
 # Libertia
+Liberta is a decentralized social media that controlled by fully users.
+
+Check the details: https://devpost.com/software/liberta-the-social-media-that-managed-by-users
+Demo: https://happy-swartz-bfcf26.netlify.app/
+
 
 ## Build Setup
 
